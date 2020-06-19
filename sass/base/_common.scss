@@ -1,0 +1,15 @@
+@include font-face(Inter, "../fonts/Inter-Regular", 400);
+@include font-face(Inter, "../fonts/Inter-Medium", 500);
+@include font-face(Inter, "../fonts/Inter-Bold", 600);
+@include font-face(Inter, "../fonts/Inter-SemiBold", 700);
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+}
+
+figure {
+  @include flex(null, center, center);
+}

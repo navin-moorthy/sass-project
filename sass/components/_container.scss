@@ -1,0 +1,24 @@
+.#{$prefix}c-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 100%;
+
+  @include tablet {
+    width: $mobile-container;
+  }
+
+  @include laptop {
+    width: $tablet-container;
+  }
+
+  @include desktop {
+    width: $desktop-container;
+  }
+
+  @include wide {
+    width: $wide-container;
+  }
+}

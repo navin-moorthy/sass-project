@@ -1,0 +1,133 @@
+// Font Face
+
+@mixin font-face($font-name, $path, $weight: normal, $style: normal, $stretch: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    font-weight: $weight;
+    font-style: $style;
+    src: local(quote($font-name)), url($path + ".woff2?v=3.13") format("woff2"),
+      url($path + ".woff?v=3.13") format("woff");
+  }
+}
+
+// Responsiveness
+
+@mixin tablet {
+  @media (min-width: $mobile * 1px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: $tablet * 1px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop * 1px) {
+    @content;
+  }
+}
+
+@mixin wide {
+  @media (min-width: $wide * 1px) {
+    @content;
+  }
+}
+
+// Flex
+
+@mixin flex($direction: null, $align: null, $justify: null) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+// Hamburger animation
+
+@mixin hamburger($width, $height) {
+  position: relative;
+  width: $width;
+  height: $height;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: $white;
+    border-radius: $border-radius-full;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: $transition-base;
+
+    &:nth-child(1) {
+      top: 0px;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      top: 6px;
+    }
+
+    &:nth-child(4) {
+      top: 12px;
+    }
+  }
+
+  &--open {
+    span {
+      &:nth-child(1) {
+        top: 6px;
+        opacity: 0;
+      }
+
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+
+      &:nth-child(4) {
+        top: 6px;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+// Pseudo Selectors
+
+@mixin pseudo {
+  &:hover,
+  &:active,
+  &:focus {
+    @content;
+  }
+}
+
+// box
+
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// font
+
+@mixin font($weight, $size, $height, $spacing) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
+// transition
+
+@mixin transition {
+  transition: $transition-base;
+}

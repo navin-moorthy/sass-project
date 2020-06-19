@@ -1,0 +1,77 @@
+// Site Prefix
+
+$prefix: pe-;
+
+// Color System
+
+$white: #ffffff;
+$black: #000000;
+
+$orange-100: #fef5eb;
+$orange-300: #f6ad55;
+$orange-400: #f58024;
+$orange-500: #dd6b20;
+
+$orange-hover: #e66d0e;
+$orange-hover-lite: #fffaf5;
+
+$green-50: #e7fef8;
+$green-400: #11c095;
+$green-500: #0fac85;
+$green-600: #1c9778;
+
+$green-hover: #0e9674;
+
+$gray-50: #f9f9f9;
+$gray-100: #f2f2f2;
+$gray-300: #d9d9d9;
+$gray-400: #b3b3b3;
+$gray-500: #737373;
+$gray-600: #595959;
+$gray-700: #404040;
+$gray-800: #343434;
+$gray-900: #181818;
+
+$blue-50: #ebf8ff;
+$blue-100: #cbe3f6;
+$blue-500: #007aff;
+$blue-600: #1971e4;
+
+$blue-hover: #0065d4;
+
+$pink-400: #ed64a6;
+$pink-500: #d53f8c;
+
+$hero-bg: #f9f8f3;
+
+// Typography
+
+$font-family-base: "Inter", sans-serif;
+$font-weight-base: 400;
+$font-size-base: 1rem;
+$line-height-base: 16px;
+
+// Media Queries
+
+$mobile: 576;
+$tablet: 768;
+$desktop: 992;
+$wide: 1200;
+
+// Containers
+
+$mobile-container: 540px;
+$tablet-container: 720px;
+$desktop-container: 960px;
+$wide-container: 1140px;
+
+// Border Radius
+
+$border-radius-1-5: 6px;
+$border-radius-2: 8px;
+$border-radius-3: 8px;
+$border-radius-full: 9999px;
+
+// Transition
+
+$transition-base: 0.15s ease-in-out;

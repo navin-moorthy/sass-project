@@ -1,0 +1,10 @@
+.#{$prefix}c-menu {
+  &__hamburger {
+    @include hamburger(20px, 15px);
+    margin-right: 10px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.#{$prefix}l-header {
+  background: $orange-400;
+  padding: 8px 0;
+
+  &__content {
+    @include flex(null, center);
+  }
+}

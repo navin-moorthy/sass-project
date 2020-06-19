@@ -1,0 +1,37 @@
+.#{$prefix}c-breadcrumb {
+  display: none;
+
+  @include tablet {
+    @include flex(null, center, null);
+  }
+
+  margin-bottom: 12px;
+
+  &__item {
+    @include flex(null, center, center);
+  }
+
+  &__link {
+    @include font(null, 13px, 15px, null);
+    color: $gray-600;
+
+    @include pseudo {
+      text-decoration: underline;
+    }
+
+    &--current {
+      background: $white;
+      color: $gray-800;
+      border-radius: 31px;
+      padding: 2px 8px;
+
+      @include pseudo {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__seperator {
+    margin: 0 10px;
+  }
+}

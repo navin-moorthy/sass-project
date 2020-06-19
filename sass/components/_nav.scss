@@ -1,0 +1,72 @@
+// Button Placeholder
+
+%nav-link {
+  @include flex(null, center);
+  border-radius: $border-radius-2;
+  transition: $transition-base;
+  padding: 8px 12px;
+  @include font(600, 14px, 16px, null);
+
+  @include pseudo {
+    outline: none;
+  }
+}
+
+// Nav
+
+.#{$prefix}c-nav {
+  @include flex(null, center);
+
+  &__item {
+    &:not(:last-child) {
+      @include tablet {
+        margin-right: 8px;
+      }
+    }
+
+    &:not(:first-child) {
+      display: none;
+
+      @include tablet {
+        display: block;
+      }
+    }
+  }
+
+  &__link {
+    @extend %nav-link;
+    color: $white;
+
+    &-icon {
+      @include box(20px);
+
+      @include tablet {
+        @include box(16px);
+        margin-right: 6px;
+        display: block;
+      }
+    }
+
+    &-text {
+      display: none;
+
+      @include tablet {
+        display: block;
+      }
+    }
+
+    @include pseudo {
+      background-color: $orange-500;
+    }
+  }
+
+  &__link--inverse {
+    @extend %nav-link;
+    color: $orange-500;
+    background: $white;
+
+    @include pseudo {
+      background-color: $gray-50;
+    }
+  }
+}
