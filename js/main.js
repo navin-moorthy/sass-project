@@ -1,4 +1,6 @@
+// TODO: add better comments
 // Mobile Navbar
+
 document.addEventListener("DOMContentLoaded", function (e) {
   const hamburgerMenuIcon = document.querySelector(".pe-c-menu__hamburger");
 
@@ -10,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
 });
 
 // Search in hero section
+
 new autoComplete({
   data: {
     src: async function () {
@@ -266,56 +269,50 @@ new autoComplete({
     render: true,
     container: (source) => {
       // Render the enter ul with class
-      source.setAttribute("class", "autocomplete-options");
-      source.setAttribute("id", "mutual_fund_list");
+      source.setAttribute("class", "pe-c-autocomplete__list");
 
-      document.getElementById("autoComplete").addEventListener("autoComplete", function (event) {
-        // Event listener for hiding
-        function hideSearchResults() {
-          const searchResults = document.getElementById("mutual_fund_list");
-          while (searchResults.firstChild) {
-            searchResults.removeChild(searchResults.firstChild);
+      const destination = document.getElementById("autoComplete");
+
+      function handleInputChange(event) {
+        // Event listener for removing the listItems on document click
+        const hideSearchResults = () => {
+          while (source.firstChild) {
+            source.removeChild(source.firstChild);
           }
-          document.removeEventListener("click", hideSearchResults);
-        }
+        };
 
-        // Add count
-        const query = document.querySelector("#autoComplete").value;
+        document.addEventListener("click", hideSearchResults, { once: true });
 
-        // For search count
-        if (query.length > 0) {
+        const query = this.value;
+        if (!query.length > 0) return;
+
+        // when the search count is greater than 5 and the query length has value
+        if (event.detail.results.length > 0) {
           // Assign total count, from the API here
           const totalCount = 48;
+          const result = document.createElement("li");
 
-          const result = document.createElement("span");
-          result.setAttribute("class", "see-all-results");
-
+          result.classList.add("pe-c-autocomplete__list--all-results");
           result.innerHTML = `
-              <a href="#" target="_blank">
-                See all ${totalCount} results for <span>${query}</span>
-                <figure>
-                  <img src="./images/svg/right-arrow.svg" alt="right-arrow">
-                </figure>
-              </a>`;
+            <a href="#" target="_blank">
+              See all ${totalCount} results for <span>${query}</span>
+              <img src="./images/svg/right-arrow.svg" alt="right-arrow">
+            </a>`;
 
-          const optionsUl = document.querySelector(".autocomplete-options");
+          // Insert see all results and remove any no results
+          setTimeout(() => {
+            const noResults = document.querySelector(".pe-c-autocomplete__list--no-results");
 
-          // when the search count is greater than 5
-          if (optionsUl && event.detail.results.length > 0) {
-            // Insert see all results
-            setTimeout(() => {
-              const noResults = document.querySelector(".no-results");
-              if (noResults) {
-                noResults.remove();
-              }
-              optionsUl.appendChild(result);
-            }, 100);
-          }
+            if (noResults) {
+              noResults.remove();
+            }
+
+            source.appendChild(result);
+          }, 1);
         }
+      }
 
-        // For hiding when clicked outside
-        document.addEventListener("click", hideSearchResults);
-      });
+      destination.addEventListener("autoComplete", handleInputChange);
     },
     destination: document.querySelector("#autoComplete"),
     position: "afterend",
@@ -327,23 +324,20 @@ new autoComplete({
   resultItem: {
     content: (data, source) => {
       source.innerHTML = `
-      <div class="mutual-fund-card ${data.value.type == "recommended" ? "recommended-border" : ""} search-item">
-        <div class="mutual-fund-card-container">
-          <div class="mutual-fund-card-content">
-          <div class="recommend-border"></div>
-            <figure>
-            <img src="${data.value && data.value.meta ? data.value.meta.image : ""}" alt="${data.match}" />
-            </figure>
-            <div class="brand-info">
-              <h4>
-                ${data && data.value ? data.value.title : ""}
-              </h4>
-              <div class="badge-container">
-                <p>${data && data.value ? data.value.cap : ""}</p>
-                <p class="badge ${data.value.type}">${data && data.value ? data.value.type : ""}</p>
-
-              </div>
-            </div>
+      <div class="pe-c-autocomplete__list--item pe-c-fund-card d-flex align-items-center">
+        <div class="pe-c-recommended__border ${
+          data.value.type == "recommended" ? "pe-c-recommended__border--active" : ""
+        }"></div>
+        <figure class="pe-c-fund-card__logo">
+          <img src="${data.value && data.value.meta ? data.value.meta.image : ""}" alt="${data.match}" />
+        </figure>
+        <div class="pe-c-fund-card__info flex-fill">
+          <h5 class="pe-h5 pe-overflow-ellipsis">
+            ${data && data.value ? data.value.title : ""}
+          </h5>
+          <div class="badge-container d-flex align-items-center">
+            <p class="pe-p__small mr-2">${data && data.value ? data.value.cap : ""}</p>
+            <p class="pe-p__small pe-c-badge ${data.value.type}">${data && data.value ? data.value.type : ""}</p>
           </div>
         </div>
       </div>
@@ -355,15 +349,15 @@ new autoComplete({
     // Create an li tag with no results
     const query = document.querySelector("#autoComplete").value;
     const result = document.createElement("li");
-    result.setAttribute("class", "no-results");
+    result.classList.add("pe-c-autocomplete__list--no-results");
     result.setAttribute("tabindex", "1");
 
     // Append the content
     result.innerHTML = `No Results for <span>${query}</span>`;
-    document.querySelector(".autocomplete-options").appendChild(result);
+    document.querySelector(".pe-c-autocomplete__list").appendChild(result);
 
     // When there is no results, see all results section has to be manually removed
-    const seeAllResults = document.querySelector(".see-all-results");
+    const seeAllResults = document.querySelector(".pe-c-autocomplete__list--all-results");
     if (seeAllResults) {
       seeAllResults.remove();
     }

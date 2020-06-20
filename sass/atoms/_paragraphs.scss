@@ -9,8 +9,13 @@
     opacity: 1;
   }
 
-  @include lg {
+  @include md {
     @include font(null, 1.125rem, null, null);
     margin-bottom: 1.75rem !important;
   }
+}
+
+.#{$prefix}p__small {
+  @include font(null, 13px, 1.2, null);
+  color: $gray-500;
 }

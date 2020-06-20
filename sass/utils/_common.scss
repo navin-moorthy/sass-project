@@ -14,6 +14,12 @@ figure {
   @include flex(null, center, center);
 }
 
+.pe-overflow-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .m-1-5 {
   margin: 0.375rem !important;
 }

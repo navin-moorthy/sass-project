@@ -7,7 +7,13 @@
     color: $gray-900;
   }
 
-  @include lg {
+  @include md {
     @include font(null, 2.25rem, 1.11, null);
   }
+}
+
+.#{$prefix}h5 {
+  @include font(600, 14px, null, null);
+  color: $gray-900;
+  margin-bottom: 10px;
 }

@@ -39,6 +39,12 @@ figure {
   justify-content: center;
 }
 
+.pe-overflow-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .m-1-5 {
   margin: 0.375rem !important;
 }
@@ -172,11 +178,18 @@ figure {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .pe-h1 {
     font-size: 2.25rem;
     line-height: 1.11;
   }
+}
+
+.pe-h5 {
+  font-weight: 600;
+  font-size: 14px;
+  color: #181818;
+  margin-bottom: 10px;
 }
 
 .pe-p__lead {
@@ -195,11 +208,17 @@ figure {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .pe-p__lead {
     font-size: 1.125rem;
     margin-bottom: 1.75rem !important;
   }
+}
+
+.pe-p__small {
+  font-size: 13px;
+  line-height: 1.2;
+  color: #737373;
 }
 
 .pe-input__autocomplete {
@@ -223,7 +242,6 @@ figure {
   .pe-input__autocomplete {
     font-size: 1rem;
     padding: 0.875rem 3rem 0.875rem 1rem;
-    border-radius: 6px;
     background-size: 1.125rem;
     background-position: top 0.875rem right 0.875rem;
     box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.1);
@@ -360,171 +378,27 @@ figure {
   text-decoration: none;
 }
 
-.pe-c-autocomplete {
+.pe-c-recommended__border {
+  width: 4px;
+  height: 48px;
+  background: transparent;
+  border-radius: 27px;
+  margin-right: 2px;
+}
+
+.pe-c-recommended__border--active {
+  background: #f58024;
+}
+
+.pe-c-badge {
+  font-weight: 500;
   position: relative;
-}
-
-.autocomplete-options {
-  position: absolute;
-  background: #ffffff;
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-  width: 100%;
-  z-index: 10;
-}
-
-.autocomplete-options .no-results {
-  text-align: center;
-  font-size: 0.875rem;
-  font-weight: 500;
-  margin: 12px auto;
-}
-
-.autocomplete-options .see-all-results {
-  text-align: center;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: #595959;
-}
-
-.autocomplete-options .see-all-results a {
-  display: block;
-  padding: 12px;
-  color: unset;
-}
-
-.autocomplete-options .see-all-results span {
-  color: #181818;
-}
-
-.autocomplete-options .see-all-results figure {
-  margin-left: 0.875rem;
-  display: inline-block;
-  height: unset;
-  width: unset;
-}
-
-.search-item-title {
-  max-width: 289px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  line-height: 1;
-}
-
-.search-item-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  margin-right: 8px;
-}
-
-.search-item {
-  display: flex;
-  padding: 10px 8px;
-  box-shadow: 0px 1px 0px #e2e8f0;
-}
-
-.search-item .mutual-fund-card-content figure {
-  margin: 0 4px 0 3px;
-}
-
-.search-item .mutual-fund-card-content h4 {
-  font-size: 14px;
-  max-width: 300px;
-}
-
-.search-item:hover {
-  cursor: pointer;
-  background-color: #f9f9f9;
-}
-
-.search-item p {
-  margin-bottom: 0px !important;
-}
-
-.search-item.mutual-fund-card:hover:before {
-  display: none;
-}
-
-.search-item .badge-container {
-  padding-top: 10px;
-}
-
-.search-item .badge-container p {
-  font-size: 13px;
-  line-height: 1.15;
-  margin-right: 8px;
-}
-
-@media (max-width: 575px) {
-  .search-item .badge-container p {
-    padding: 0px;
-    color: #595959;
-  }
-  .search-item .badge-container p.badge {
-    padding: 2px 6px 2px 1.375rem;
-    color: #595959;
-  }
-}
-
-.search-item .badge-container .top-ranked {
-  display: block;
-}
-
-@media (max-width: 575px) {
-  .search-item .mutual-fund-card-content figure {
-    margin: 0 4px 0 3px;
-  }
-  .search-item .mutual-fund-card-content h4 {
-    font-size: 14px;
-    max-width: 250px !important;
-  }
-}
-
-@media (max-width: 991px) {
-  .search-item .mutual-fund-card-content h4 {
-    max-width: 400px;
-  }
-}
-
-@media (max-width: 767px) {
-  .search-item .mutual-fund-card-content h4 {
-    max-width: 350px;
-  }
-}
-
-@media (max-width: 320px) {
-  .search-item .mutual-fund-card-content h4 {
-    font-size: 14px;
-    max-width: 200px !important;
-  }
-}
-
-.search-item-right-content .search-item-description p {
-  font-size: 13px;
-  margin-right: 13px;
-  color: #737373;
-  line-height: 1.2;
-}
-
-.search-item-description .new-recommended.new-badge {
-  color: #f58024;
-}
-
-.badge {
-  font-weight: 500;
-  line-height: 1.2;
   padding: 2px 6px 2px 1.375rem;
   border-radius: 6px;
-  position: relative;
   text-transform: capitalize;
-  color: #404040;
 }
 
-.badge:before {
+.pe-c-badge:before {
   position: absolute;
   content: "";
   width: 12px;
@@ -532,232 +406,97 @@ figure {
   background-repeat: no-repeat;
   background-size: contain;
   left: 6px;
-  top: 3.5px;
+  top: 3.8px;
 }
 
-.badge.recommended {
+.pe-c-badge.recommended {
   color: #f58024;
   background-color: #fef5eb;
 }
 
-.badge.top-ranked {
-  color: #0fac85;
-}
-
-.badge.recommended:before {
+.pe-c-badge.recommended:before {
   background-image: url("../images/svg/mark.svg");
 }
 
-.badge.top-ranked:before {
-  background-image: url("../images/svg/star-circled.svg");
-}
-
-.badge.not-recommended:before {
-  background-image: url("../images/svg/not-recommended.svg");
-}
-
-.fund-card-link {
-  text-decoration: none;
-  position: relative;
-  display: block;
-  transition: all 150ms ease;
-  opacity: 1;
-}
-
-.fund-card-link:before {
-  opacity: 0;
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: -10px;
-  height: calc(100% - 1px);
-  width: calc(100% + 18px);
-  border: 1px solid #d9d9d9;
-  border-radius: 8px;
-  box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 200ms ease;
-}
-
-.fund-card-link:hover > .mutual-fund-card {
-  box-shadow: unset;
-}
-
-.fund-card-link:hover:before {
-  opacity: 1;
-}
-
-.mutual-fund-card {
-  padding: 16px 0px;
-  position: relative;
-  cursor: pointer;
-  box-shadow: 0px 1px 0px #e2e8f0;
-  margin-top: 1px;
-}
-
-.mutual-fund-card-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.recommend-border {
-  width: 4px;
-  height: 48px;
-  background-color: transparent;
-  border-radius: 27px;
-}
-
-.mutual-fund-card.recommended-border .recommend-border {
-  background-color: #f58024;
-}
-
-.mutual-fund-card-content {
-  display: flex;
-  align-items: center;
-  min-width: 0;
-}
-
-.mutual-fund-card-content figure {
-  width: 48px;
-  height: 48px;
-  margin: 0 8px;
-}
-
-.mutual-fund-card-content figure img {
-  width: auto;
-}
-
-.mutual-fund-card-content h4 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.badge-container {
-  display: flex;
-  align-items: center;
-  padding-top: 12px;
-}
-
-.brand-info {
-  flex: 1;
-  align-self: center;
-  min-width: 0;
-}
-
-.badge-container p {
-  font-size: 13px;
-  margin-right: 13px;
-  color: #737373;
-  line-height: 1.2;
-}
-
-.badge-container p:last-child {
-  margin-right: 0;
-}
-
-.mutual-fund-info-container {
-  display: flex;
-  white-space: nowrap;
-  padding-right: 8px;
-  padding-left: 8px;
-}
-
-.mutual-fund-info p {
-  font-weight: 400;
-}
-
-.mutual-fund-info p:first-child {
-  font-weight: 400;
-  color: #343434;
-  line-height: 1.2;
-  padding-bottom: 12px;
-}
-
-.mutual-fund-info {
-  margin-right: 1.5rem;
-}
-
-.mutual-fund-info:last-child {
-  margin-right: 0;
-}
-
-.mutual-fund-info p:last-child {
-  font-size: 13px;
-  color: #737373;
-  line-height: 1;
-}
-
-.mutual-fund-info p.fund-int-percentage {
-  font-weight: 700;
+.pe-c-badge.top-ranked {
   color: #0fac85;
 }
 
-@media (max-width: 767px) {
-  .mutual-fund-card .size-fund {
-    display: none;
-  }
-  .mutual-fund-card .mutual-fund-info {
-    text-align: right;
-  }
-  .mutual-fund-card .top-ranked {
-    display: none;
-  }
-  .mutual-fund-card:before {
-    display: none;
-  }
+.pe-c-badge.top-ranked:before {
+  background-image: url("../images/svg/star-circled.svg");
 }
 
-@media (max-width: 575px) {
-  .fund-card-link:before {
-    display: none;
-  }
-  .mutual-fund-card {
-    padding: 10px 8px;
-  }
-  .mutual-fund-card h4 {
-    font-size: 12px;
-    line-height: 1.2;
-  }
-  .mutual-fund-card .mutual-fund-card-container {
-    align-items: center;
-  }
-  .mutual-fund-card .mutual-fund-info-container {
-    padding-right: 0;
-  }
-  .mutual-fund-card .badge-container {
-    padding-top: 6px;
-  }
-  .mutual-fund-card .badge-container p {
-    margin-right: 8px;
-  }
-  .mutual-fund-card .mutual-fund-info p:first-child {
-    padding-bottom: 10px;
-    line-height: 1;
-  }
-  .mutual-fund-card figure {
-    margin-left: 3px;
-    margin-right: 4px;
-  }
+.pe-c-badge.not-recommended:before {
+  background-image: url("../images/svg/not-recommended.svg");
 }
 
-@media (max-width: 370px) {
-  .mutual-fund-card {
-    padding: 8px;
-  }
-  .mutual-fund-card .badge-container p {
-    font-size: 12px;
-  }
-  .mutual-fund-card .badge:before {
-    width: 11px;
-    height: 11px;
-    top: 3px;
-  }
-  .mutual-fund-card .mutual-fund-card-content figure {
-    width: 32px;
-    height: 32px;
-  }
+.pe-c-fund-card {
+  padding: 1rem 0px;
+  box-shadow: 0px 1px 0px #e2e8f0;
+  cursor: pointer;
+}
+
+.pe-c-fund-card:hover {
+  background-color: #f9f9f9;
+}
+
+.pe-c-fund-card__logo {
+  width: 48px;
+  height: 48px;
+  margin-right: 4px;
+}
+
+.pe-c-fund-card__info {
+  max-width: 300px;
+}
+
+.pe-c-autocomplete {
+  position: relative;
+}
+
+.pe-c-autocomplete__list {
+  position: absolute;
+  background: #ffffff;
+  width: 100%;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  z-index: 10;
+}
+
+.pe-c-autocomplete__list--item {
+  padding: 10px 8px;
+}
+
+.pe-c-autocomplete__list--no-results {
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-align: center;
+  margin: 0.75rem 0;
+}
+
+.pe-c-autocomplete__list--all-results {
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.pe-c-autocomplete__list--all-results a {
+  display: block;
+  padding: 12px;
+  color: #595959;
+}
+
+.pe-c-autocomplete__list--all-results a:hover {
+  text-decoration: underline;
+}
+
+.pe-c-autocomplete__list--all-results span {
+  color: #181818;
+}
+
+.pe-c-autocomplete__list--all-results img {
+  margin-left: 0.875rem;
+  display: inline-block;
 }
 
 .pe-c-brands-showcase {
