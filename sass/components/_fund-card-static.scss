@@ -1,0 +1,95 @@
+.#{$prefix}c-fund-card-static {
+  background: linear-gradient(0deg, #ffffff -106.25%, #eafff2 100%);
+  box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    button {
+      background-color: $green-600;
+    }
+  }
+
+  &.short-term {
+    background: linear-gradient(360deg, #f7e4b9 -102.12%, #fef8eb 109.19%);
+
+    &:hover {
+      button {
+        background-color: $orange-500;
+      }
+    }
+  }
+
+  &.save-taxes {
+    background: linear-gradient(180deg, #eef9ff 10.95%, #cce2ff 246.29%);
+
+    &:hover {
+      button {
+        background-color: $blue-600;
+      }
+    }
+  }
+
+  &.emergency {
+    background: linear-gradient(180deg, #fff5f5 13.75%, #fed7d7 420%);
+
+    &:hover {
+      button {
+        background-color: $pink-500;
+      }
+    }
+  }
+
+  &__wrapper {
+    padding: 32px 24px 24px 24px;
+    box-shadow: 0px 1px 0px #e2e8f0;
+    cursor: pointer;
+
+    @include sm {
+      padding: 12px 1.25rem 12px 1.25rem;
+    }
+
+    .long-term & {
+      background-image: url(../images/svg/yellow-circle.svg);
+      background-position: bottom -195px right -210px;
+      background-repeat: no-repeat;
+      background-size: auto;
+
+      @include sm {
+        background-position: top -14px right -170px;
+      }
+    }
+  }
+
+  &__info {
+    max-width: 265px;
+
+    @include sm {
+      max-width: 387px;
+    }
+  }
+
+  &__image {
+    @include box(60px, 60px);
+
+    @include sm {
+      @include box(48px);
+      margin-right: 20px;
+    }
+  }
+
+  &-list {
+    margin-bottom: 20px;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      @include font(500, 15px, 1.35, null);
+      margin-bottom: 8px;
+      color: $gray-900;
+    }
+
+    &__image {
+      @include box(16px, 16px);
+      margin-right: 8px;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 @include font-face(Inter, "../fonts/Inter-Regular", 400);
 @include font-face(Inter, "../fonts/Inter-Medium", 500);
-@include font-face(Inter, "../fonts/Inter-Bold", 600);
-@include font-face(Inter, "../fonts/Inter-SemiBold", 700);
+@include font-face(Inter, "../fonts/Inter-SemiBold", 600);
+@include font-face(Inter, "../fonts/Inter-Bold", 700);
 
 body {
   font-family: $font-family-base;

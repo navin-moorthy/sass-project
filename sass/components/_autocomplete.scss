@@ -10,7 +10,9 @@
     z-index: $z-index-autocomplete;
 
     &--item {
-      padding: 10px 8px;
+      &:hover {
+        background-color: $gray-50;
+      }
     }
 
     &--no-results {

@@ -1,19 +1,50 @@
 .#{$prefix}h1 {
-  @include font(600, 1.375rem, 1.11, 0.01em);
+  @include font(600, 1.375rem, 1.1, 0.01em);
   color: $white;
 
   @include sm {
-    @include font(null, 1.875rem, 1.333, 0.02em);
+    @include font(null, 1.875rem, 1.3, 0.02em);
     color: $gray-900;
   }
 
   @include md {
-    @include font(null, 2.25rem, 1.11, null);
+    @include font(null, 2.25rem, 1.1, null);
+  }
+}
+
+.#{$prefix}h2 {
+  @include font(600, 1.25rem, 1.1, null);
+  color: $gray-900;
+
+  @include sm {
+    @include font(null, 1.75rem, 1.5, 0.01em);
+  }
+}
+
+.#{$prefix}h4 {
+  @include font(600, 14px, 1.2, null);
+  color: $gray-900;
+  margin-bottom: 10px;
+
+  @include md {
+    @include font(null, 1rem, null, null);
+    margin-bottom: 12px;
+  }
+}
+
+.#{$prefix}h4__static {
+  @include font(600, 18px, 1.1, null);
+  color: $gray-900;
+  margin-bottom: 8px;
+
+  @include md {
+    @include font(600, 1rem, null, null);
+    margin-bottom: 4px;
   }
 }
 
 .#{$prefix}h5 {
-  @include font(600, 14px, null, null);
+  @include font(600, 14px, 1.2, null);
   color: $gray-900;
   margin-bottom: 10px;
 }

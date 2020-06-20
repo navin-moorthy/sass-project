@@ -367,3 +367,10 @@ new autoComplete({
     console.log(feedback.selection.value.image_url);
   },
 });
+
+document.addEventListener("DOMContentLoaded", function (e) {
+  tinytabs(document.querySelector(".pe-c-fund-tabs"), {
+    anchor: false,
+    hideTitle: true,
+  });
+});

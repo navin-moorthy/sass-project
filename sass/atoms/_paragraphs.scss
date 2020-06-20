@@ -1,5 +1,5 @@
 .#{$prefix}p__lead {
-  @include font(null, 15px, 1.333, null);
+  @include font(null, 15px, 1.3, null);
   color: ($white);
   opacity: 0.9;
 
@@ -12,6 +12,24 @@
   @include md {
     @include font(null, 1.125rem, null, null);
     margin-bottom: 1.75rem !important;
+  }
+}
+
+.#{$prefix}p__medium {
+  @include font(null, 14px, 1.5, null);
+  color: $gray-500;
+
+  @include sm {
+    @include font(null, 1rem, 1.6, null);
+  }
+}
+
+.#{$prefix}p__sm {
+  @include font(null, 14px, 1.4, null);
+  color: $gray-700;
+
+  @include md {
+    @include font(null, 13px, null, null);
   }
 }
 
