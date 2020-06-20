@@ -1,0 +1,16 @@
+.#{$prefix}p__lead {
+  @include font(null, 15px, 1.333, null);
+  color: ($white);
+  opacity: 0.9;
+
+  @include sm {
+    @include font(null, 1rem, 1.5, null);
+    color: $gray-600;
+    opacity: 1;
+  }
+
+  @include lg {
+    @include font(null, 1.125rem, null, null);
+    margin-bottom: 1.75rem !important;
+  }
+}

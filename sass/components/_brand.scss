@@ -2,7 +2,7 @@
   &__logo {
     @include box(90px, 25px);
 
-    @include tablet {
+    @include sm {
       @include box(100%, auto);
     }
   }

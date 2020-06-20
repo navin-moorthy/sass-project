@@ -1,0 +1,31 @@
+.pe-l-header {
+  background: #f58024;
+}
+
+.pe-l-hero {
+  background: #f58024;
+}
+
+@media (min-width: 576px) {
+  .pe-l-hero {
+    background: #f9f8f3;
+  }
+}
+
+.pe-l-hero__content {
+  padding: 0.75 0 1.5rem 0;
+}
+
+@media (min-width: 576px) {
+  .pe-l-hero__content {
+    padding: 4rem 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .pe-l-hero__content {
+    height: 100%;
+    max-width: 400px;
+  }
+}
+/*# sourceMappingURL=page-rating.css.map */

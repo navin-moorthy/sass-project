@@ -49,14 +49,14 @@ $hero-bg: #f9f8f3;
 $font-family-base: "Inter", sans-serif;
 $font-weight-base: 400;
 $font-size-base: 1rem;
-$line-height-base: 16px;
+$line-height-base: 1;
 
 // Media Queries
 
-$mobile: 576;
-$tablet: 768;
-$desktop: 992;
-$wide: 1200;
+$sm: 576;
+$md: 768;
+$lg: 992;
+$xl: 1200;
 
 // Containers
 

@@ -6,14 +6,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Ratings | Evergreen</title>
     <meta name="description" content="Scripbox ratings page" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/grid.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/page-rating.css" />
   </head>
 
   <body>
-    <header class="pe-l-header">
-      <div class="pe-c-container">
-        <div class="pe-l-header__content">
-          <div class="pe-c-menu__hamburger">
+    <header class="pe-l-header py-2">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div class="pe-c-menu__hamburger d-sm-none">
             <span></span>
             <span></span>
             <span></span>
@@ -21,35 +23,35 @@
           </div>
 
           <div class="pe-c-brand">
-            <a href="https://scripbox.com">
+            <a href="#">
               <img class="pe-c-brand__logo" src="images/svg/logo.svg" alt="scripbox-logo" />
             </a>
           </div>
 
-          <div class="pe-c-flex-grow"></div>
+          <div class="flex-grow-1"></div>
 
           <nav>
-            <ul class="pe-c-nav">
-              <li class="pe-c-nav__item">
+            <ul class="d-flex align-items-center">
+              <li class="mr-sm-2">
                 <a href="tel:1800-102-1265" class="pe-c-nav__link">
-                  <img class="pe-c-nav__link-icon" src="./images/svg/tel-icon.svg" alt="tel-icon" />
-                  <span class="pe-c-nav__link-text">1800-102-1265</span>
+                  <img class="pe-c-nav__link-icon mr-sm-1-5" src="./images/svg/tel-icon.svg" alt="tel-icon" />
+                  <span class="d-none d-sm-block">1800-102-1265</span>
                 </a>
               </li>
 
-              <li class="pe-c-nav__item">
+              <li class="d-none d-sm-block mr-sm-2">
                 <a href="#" class="pe-c-nav__link">
                   Blog
                 </a>
               </li>
 
-              <li class="pe-c-nav__item">
+              <li class="d-none d-sm-block mr-sm-2">
                 <a href="#" class="pe-c-nav__link">
                   Login
                 </a>
               </li>
 
-              <li class="pe-c-nav__item">
+              <li class="d-none d-sm-block">
                 <a href="#" class="pe-c-nav__link--inverse">
                   Signup
                 </a>
@@ -68,48 +70,53 @@
       </div>
     </header>
     <main>
-      <section class="pe-l-hero">
-        <div class="pe-c-container">
-          <div class="pe-c-flex-row">
-            <div class="pe-l-hero__left">
-              <div class="pe-l-hero__content">
-                <ul class="pe-c-breadcrumb">
-                  <li class="pe-c-breadcrumb__item">
+      <section class="pe-l-hero d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="pe-l-hero__content d-flex flex-column justify-content-center p-lg-0">
+                <ul class="pe-c-breadcrumb d-none d-sm-flex align-items-center mb-2-5">
+                  <li class="pe-c-breadcrumb__item d-flex align-items-center justify-content-center">
                     <a href="#" class="pe-c-breadcrumb__link">
                       <img src="./images/svg/home-icon.svg" alt="Home" />
                     </a>
 
-                    <span role="presentation" class="pe-c-breadcrumb__seperator">
+                    <span role="presentation" class="mx-2-25">
                       <img src="./images/svg/right-arrow.svg" alt="Home" />
                     </span>
                   </li>
 
-                  <li class="pe-c-breadcrumb__item">
+                  <li class="pe-c-breadcrumb__item d-flex align-items-center justify-content-center">
                     <a href="#" class="pe-c-breadcrumb__link">Mutual Funds</a>
 
-                    <span role="presentation" class="pe-c-breadcrumb__seperator">
+                    <span role="presentation" class="mx-2-25">
                       <img src="./images/svg/right-arrow.svg" alt="Home" />
                     </span>
                   </li>
 
-                  <li class="pe-c-breadcrumb__item">
+                  <li class="pe-c-breadcrumb__item d-flex align-items-center justify-content-center">
                     <span class="pe-c-breadcrumb__link pe-c-breadcrumb__link--current">Mutual Fund Ratings</span>
                   </li>
                 </ul>
 
-                <h1 class="pe-l-hero__title">Mutual Fund Ratings</h1>
-                <p class="pe-l-hero__description">
+                <h1 class="pe-h1 mb-2 mb-lg-2-5">Mutual Fund Ratings</h1>
+                <p class="pe-p__lead mb-4">
                   Invest in the best mutual funds recommended by Scripbox that are algorithmically selected that best
                   suit your needs.
                 </p>
-                <div class="pe-l-hero__autocomplete">
-                  <input id="autoComplete" type="search" placeholder="Search for any mutual fund" />
+                <div class="pe-c-autocomplete">
+                  <input
+                    id="autoComplete"
+                    class="pe-input__autocomplete"
+                    type="search"
+                    placeholder="Search for any mutual fund"
+                  />
                 </div>
               </div>
             </div>
-            <div class="pe-l-hero__right">
-              <div class="pe-c-brands-showcase">
-                <div class="pe-c-brands-showcase__list pe-c-brands-showcase__list--1">
+            <div class="col d-none d-lg-block">
+              <div class="pe-c-brands-showcase d-flex justify-content-center">
+                <div class="pe-c-brands-showcase__list d-flex flex-column pe-c-brands-showcase__list--1">
                   <figure class="pe-c-brands-showcase__icon">
                     <img src="./images/svg/logo/logo-franklin.svg" alt="logo-franklin" />
                   </figure>
@@ -144,7 +151,7 @@
                     <img src="./images/svg/logo/logo-franklin.svg" alt="logo-franklin" />
                   </figure>
                 </div>
-                <div class="pe-c-brands-showcase__list pe-c-brands-showcase__list--2">
+                <div class="pe-c-brands-showcase__list d-flex flex-column pe-c-brands-showcase__list--2">
                   <figure class="pe-c-brands-showcase__icon">
                     <img src="./images/svg/logo/logo-kotak.svg" alt="logo-kotak" />
                   </figure>
@@ -179,7 +186,7 @@
                     <img src="./images/svg/logo/logo-kotak.svg" alt="logo-kotak" />
                   </figure>
                 </div>
-                <div class="pe-c-brands-showcase__list pe-c-brands-showcase__list--3">
+                <div class="pe-c-brands-showcase__list d-flex flex-column pe-c-brands-showcase__list--3">
                   <figure class="pe-c-brands-showcase__icon">
                     <img src="./images/svg/logo/logo-l&t.svg" alt="logo-l&t" />
                   </figure>
@@ -214,7 +221,7 @@
                     <img src="./images/svg/logo/logo-l&t.svg" alt="logo-l&t" />
                   </figure>
                 </div>
-                <div class="pe-c-brands-showcase__list pe-c-brands-showcase__list--4">
+                <div class="pe-c-brands-showcase__list d-flex flex-column pe-c-brands-showcase__list--4">
                   <figure class="pe-c-brands-showcase__icon">
                     <img src="./images/svg/logo/logo-mirae.svg" alt="logo-mirae" />
                   </figure>

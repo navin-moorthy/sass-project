@@ -1,0 +1,119 @@
+@include font-face(Inter, "../fonts/Inter-Regular", 400);
+@include font-face(Inter, "../fonts/Inter-Medium", 500);
+@include font-face(Inter, "../fonts/Inter-Bold", 600);
+@include font-face(Inter, "../fonts/Inter-SemiBold", 700);
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+}
+
+figure {
+  @include flex(null, center, center);
+}
+
+.m-1-5 {
+  margin: 0.375rem !important;
+}
+.mt-1-5,
+.my-1-5 {
+  margin-top: 0.375rem !important;
+}
+.mr-1-5,
+.mx-1-5 {
+  margin-right: 0.375rem !important;
+}
+.mb-1-5,
+.my-1-5 {
+  margin-bottom: 0.375rem !important;
+}
+.ml-1-5,
+.mx-1-5 {
+  margin-left: 0.375rem !important;
+}
+
+.m-2-25 {
+  margin: 0.675rem !important;
+}
+.mt-2-25,
+.my-2-25 {
+  margin-top: 0.675rem !important;
+}
+.mr-2-25,
+.mx-2-25 {
+  margin-right: 0.675rem !important;
+}
+.mb-2-25,
+.my-2-25 {
+  margin-bottom: 0.675rem !important;
+}
+.ml-2-25,
+.mx-2-25 {
+  margin-left: 0.675rem !important;
+}
+
+.m-2-5 {
+  margin: 0.75rem !important;
+}
+.mt-2-5,
+.my-2-5 {
+  margin-top: 0.75rem !important;
+}
+.mr-2-5,
+.mx-2-5 {
+  margin-right: 0.75rem !important;
+}
+.mb-2-5,
+.my-2-5 {
+  margin-bottom: 0.75rem !important;
+}
+.ml-2-5,
+.mx-2-5 {
+  margin-left: 0.75rem !important;
+}
+
+@include sm {
+  .m-sm-1-5 {
+    margin: 0.375rem !important;
+  }
+  .mt-sm-1-5,
+  .my-sm-1-5 {
+    margin-top: 0.375rem !important;
+  }
+  .mr-sm-1-5,
+  .mx-sm-1-5 {
+    margin-right: 0.375rem !important;
+  }
+  .mb-sm-1-5,
+  .my-sm-1-5 {
+    margin-bottom: 0.375rem !important;
+  }
+  .ml-sm-1-5,
+  .mx-sm-1-5 {
+    margin-bottom: 0.375rem !important;
+  }
+}
+
+@include lg {
+  .m-lg-2-5 {
+    margin: 0.75rem !important;
+  }
+  .mt-lg-2-5,
+  .my-lg-2-5 {
+    margin-top: 0.75rem !important;
+  }
+  .mr-lg-2-5,
+  .mx-lg-2-5 {
+    margin-right: 0.75rem !important;
+  }
+  .mb-lg-2-5,
+  .my-lg-2-5 {
+    margin-bottom: 0.75rem !important;
+  }
+  .ml-lg-2-5,
+  .mx-lg-2-5 {
+    margin-left: 0.75rem !important;
+  }
+}

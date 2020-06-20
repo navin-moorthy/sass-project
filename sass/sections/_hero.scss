@@ -1,0 +1,20 @@
+.#{$prefix}l-hero {
+  background: $orange-400;
+
+  @include sm {
+    background: $hero-bg;
+  }
+
+  &__content {
+    padding: 0.75 0 1.5rem 0;
+
+    @include sm {
+      padding: 4rem 0;
+    }
+
+    @include lg {
+      height: 100%;
+      max-width: 400px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,YAAY,CAAQ;EAClB,UAAU,EFUC,OAAO;CETnB;;ACFD,AAAA,UAAU,CAAQ;EAChB,UAAU,EHUC,OAAO;CGQnB;;AFJC,MAAM,EAAE,SAAS,EAAE,KAAK;EEf1B,AAAA,UAAU,CAAQ;IAId,UAAU,EHwCJ,OAAO;GGzBhB;;;AAZE,AAAD,mBAAU,CAAC;EACT,OAAO,EAAE,eAAe;CAUzB;;AFHD,MAAM,EAAE,SAAS,EAAE,KAAK;EERvB,AAAD,mBAAU,CAAC;IAIP,OAAO,EAAE,MAAM;GAOlB;;;AFSD,MAAM,EAAE,SAAS,EAAE,KAAK;EEpBvB,AAAD,mBAAU,CAAC;IAQP,MAAM,EAAE,IAAI;IACZ,SAAS,EAAE,KAAK;GAEnB",
+    "sources": [
+        "../sass/main/page-rating.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/utils/_mixins.scss",
+        "../sass/sections/_header.scss",
+        "../sass/sections/_hero.scss"
+    ],
+    "names": [],
+    "file": "page-rating.css"
+}

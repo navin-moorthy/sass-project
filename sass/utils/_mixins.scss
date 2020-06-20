@@ -12,26 +12,26 @@
 
 // Responsiveness
 
-@mixin tablet {
-  @media (min-width: $mobile * 1px) {
+@mixin sm {
+  @media (min-width: $sm * 1px) {
     @content;
   }
 }
 
-@mixin laptop {
-  @media (min-width: $tablet * 1px) {
+@mixin md {
+  @media (min-width: $md * 1px) {
     @content;
   }
 }
 
-@mixin desktop {
-  @media (min-width: $desktop * 1px) {
+@mixin lg {
+  @media (min-width: $lg * 1px) {
     @content;
   }
 }
 
-@mixin wide {
-  @media (min-width: $wide * 1px) {
+@mixin xl {
+  @media (min-width: $xl * 1px) {
     @content;
   }
 }
