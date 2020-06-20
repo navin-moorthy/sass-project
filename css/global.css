@@ -384,6 +384,7 @@ figure {
   background: transparent;
   border-radius: 27px;
   margin-right: 2px;
+  flex-shrink: 0;
 }
 
 .pe-c-recommended__border--active {
@@ -444,9 +445,11 @@ figure {
   width: 48px;
   height: 48px;
   margin-right: 4px;
+  flex-shrink: 0;
 }
 
 .pe-c-fund-card__info {
+  min-width: 200px;
   max-width: 300px;
 }
 

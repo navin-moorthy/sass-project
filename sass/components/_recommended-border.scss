@@ -3,6 +3,7 @@
   background: transparent;
   border-radius: 27px;
   margin-right: 2px;
+  flex-shrink: 0;
 
   &--active {
     background: $orange-400;

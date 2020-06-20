@@ -10,9 +10,11 @@
   &__logo {
     @include box(48px);
     margin-right: 4px;
+    flex-shrink: 0;
   }
 
   &__info {
+    min-width: 200px;
     max-width: 300px;
   }
 }
