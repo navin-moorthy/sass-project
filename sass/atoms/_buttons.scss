@@ -28,3 +28,21 @@
     outline: none;
   }
 }
+
+.#{$prefix}btn-secondary {
+  display: flex;
+  align-items: center;
+  @include font(600, 14px, 1.15, null);
+  color: $blue-600;
+  background: $white;
+  border-radius: 6px;
+  padding: 8px 12px;
+
+  svg {
+    margin-left: 12px;
+  }
+
+  &:hover {
+    background-color: $gray-100;
+  }
+}

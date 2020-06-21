@@ -215,6 +215,12 @@ figure {
   }
 }
 
+.pe-h4__md {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 .pe-h4__static {
   font-weight: 600;
   font-size: 18px;
@@ -293,6 +299,12 @@ figure {
   color: #737373;
 }
 
+.pe-p__invest-card {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #737373;
+}
+
 .pe-input__autocomplete {
   font-size: 0.875rem;
   width: 100%;
@@ -367,6 +379,26 @@ figure {
 
 .pe-btn-primary:hover, .pe-btn-primary:active, .pe-btn-primary:focus {
   outline: none;
+}
+
+.pe-btn-secondary {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.15;
+  color: #1971e4;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.pe-btn-secondary svg {
+  margin-left: 12px;
+}
+
+.pe-btn-secondary:hover {
+  background-color: #f2f2f2;
 }
 
 .pe-c-brand__logo {
@@ -849,5 +881,36 @@ figure {
   width: 16px;
   height: 16px;
   margin-right: 8px;
+}
+
+.pe-c-benefit-card {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .pe-c-benefit-card {
+    margin-bottom: 0rem;
+  }
+}
+
+.pe-c-benefit-card__image {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  align-self: flex-start;
+}
+
+@media (min-width: 576px) {
+  .pe-c-benefit-card__image {
+    align-self: center;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .pe-c-benefit-card__body {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=global.css.map */

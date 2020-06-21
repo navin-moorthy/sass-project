@@ -1,0 +1,25 @@
+.#{$prefix}c-benefit-card {
+  margin-bottom: 1.5rem;
+
+  @include lg {
+    margin-bottom: 0rem;
+  }
+
+  &__image {
+    @include box(40px);
+    margin-right: 1rem;
+    align-self: flex-start;
+
+    @include sm {
+      align-self: center;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__body {
+    @include sm {
+      text-align: center;
+    }
+  }
+}

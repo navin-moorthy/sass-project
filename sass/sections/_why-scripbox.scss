@@ -1,0 +1,38 @@
+.#{$prefix}l-why-scripbox {
+  padding: 2.5rem 0;
+  background-color: #f9f8f3;
+
+  @include md {
+    padding: 4rem 0;
+  }
+
+  @include lg {
+    padding: 5rem 0;
+  }
+
+  &__header {
+    max-width: 538px;
+    margin-bottom: 2rem;
+
+    .pe-h2 {
+      margin-bottom: 8px;
+    }
+
+    .pe-p__medium {
+      margin-bottom: 1.25rem;
+      text-align: center;
+    }
+
+    @include sm {
+      margin-bottom: 3.5rem;
+
+      .pe-h2 {
+        margin-bottom: 12px;
+      }
+
+      .pe-p__medium {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}

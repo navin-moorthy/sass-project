@@ -32,6 +32,11 @@
   }
 }
 
+.#{$prefix}h4__md {
+  @include font(600, 1rem, null, null);
+  margin-bottom: 0.5rem;
+}
+
 .#{$prefix}h4__static {
   @include font(600, 18px, 1.1, null);
   color: $gray-900;

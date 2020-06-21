@@ -37,3 +37,8 @@
   @include font(null, 13px, 1.2, null);
   color: $gray-500;
 }
+
+.#{$prefix}p__invest-card {
+  @include font(null, 14px, 1.4, null);
+  color: $gray-500;
+}
