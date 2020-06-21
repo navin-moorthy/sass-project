@@ -245,6 +245,36 @@ figure {
   margin-bottom: 10px;
 }
 
+.pe-h2__social-proof {
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .pe-h2__social-proof {
+    font-size: 1.5rem;
+    line-height: 1.13;
+    letter-spacing: 0.01em;
+  }
+}
+
+@media (min-width: 992px) {
+  .pe-h2__social-proof {
+    font-size: 1.75rem;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+  }
+}
+
+.pe-h2__social-proof img {
+  width: 20px;
+  height: 20px;
+}
+
 .pe-p__lead {
   font-size: 15px;
   line-height: 1.3;
@@ -303,6 +333,13 @@ figure {
   font-size: 14px;
   line-height: 1.4;
   color: #737373;
+}
+
+.pe-p__social-proof {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #ffffff;
 }
 
 .pe-input__autocomplete {

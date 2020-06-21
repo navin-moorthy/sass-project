@@ -1,0 +1,31 @@
+.#{$prefix}l-social-proof {
+  padding: 3rem 2.0625rem;
+  background: linear-gradient(193.08deg, #275393 14.23%, #173167 81.6%);
+  color: $white;
+
+  @include md {
+    padding: 2rem 0;
+  }
+
+  @include lg {
+    padding: 3.875rem 0;
+  }
+
+  &__info {
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 42px;
+    }
+
+    @include sm {
+      text-align: center;
+    }
+
+    @include lg {
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

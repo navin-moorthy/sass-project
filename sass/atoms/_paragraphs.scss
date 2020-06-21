@@ -38,7 +38,14 @@
   color: $gray-500;
 }
 
+// Better Solution
+
 .#{$prefix}p__invest-card {
   @include font(null, 14px, 1.4, null);
   color: $gray-500;
+}
+
+.#{$prefix}p__social-proof {
+  @include font(500, 14px, 1.4, null);
+  color: $white;
 }
