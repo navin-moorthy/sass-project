@@ -1,0 +1,15 @@
+.#{$prefix}c-card-list-item {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.35;
+  margin-bottom: 8px;
+  color: #181818;
+
+  figure {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+  }
+}

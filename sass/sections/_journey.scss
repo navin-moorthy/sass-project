@@ -1,0 +1,16 @@
+.#{$prefix}l-journey {
+  padding: 4rem 0;
+
+  .pe-h2 {
+    text-align: center;
+  }
+
+  @include lg {
+    padding: 6.125rem 0 7rem 0;
+  }
+
+  &-carousal {
+    margin-top: 2.4375rem;
+    padding-top: 1rem;
+  }
+}

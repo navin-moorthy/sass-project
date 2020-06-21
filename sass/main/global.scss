@@ -3,11 +3,14 @@
 @import "../utils/placeholders";
 @import "../utils/common";
 
+// Load all the atoms here
 @import "../atoms/headings";
 @import "../atoms/paragraphs";
 @import "../atoms/inputs";
 @import "../atoms/links";
 @import "../atoms/buttons";
+
+// Load all the components here
 
 @import "../components/brand";
 @import "../components/nav";
@@ -26,3 +29,5 @@
 @import "../components/rating-accordion";
 @import "../components/rating-tabs";
 @import "../components/rating-card";
+@import "../components/journey-card";
+@import "../components/card-list-item";

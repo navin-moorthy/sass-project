@@ -368,6 +368,75 @@ new autoComplete({
   },
 });
 
+var glideInstance = null;
+
+function initializeCtaListCarousel() {
+  window.addEventListener("load", function () {
+    glideInstance = new Glide(".glide", {
+      // focusAt: "center",
+      type: "carousel",
+      // autoplay: 4000,
+      startAt: 0,
+      perView: 3,
+      gap: 30,
+
+      breakpoints: {
+        991: {
+          perView: 2,
+          peek: {
+            before: 50,
+            after: 50,
+          },
+        },
+        767: {
+          perView: 1,
+          peek: {
+            before: 50,
+            after: 50,
+          },
+        },
+        576: {
+          perView: 1,
+          peek: {
+            before: 52,
+            after: 52,
+          },
+        },
+      },
+    });
+
+    if (window.outerWidth < 992) {
+      const container = document.querySelector(".pe-l-journey > .container");
+
+      //  To make it extend outside
+      if (container) {
+        container.classList.remove("container");
+        container.classList.add("full-width-container");
+      }
+    }
+
+    glideInstance.mount();
+  });
+}
+
+function changeCarouselConfiguration() {
+  if (window.outerWidth < 992) {
+    const container = document.querySelector(".pe-l-journey > .container");
+    //  To make it extend outside
+    if (container) {
+      container.classList.remove("container");
+      container.classList.add("full-width-container");
+    }
+  } else {
+    const container = document.querySelector(".pe-l-journey > .full-width-container");
+    if (container) {
+      container.classList.add("container");
+      //  To make it extend outside
+      container.classList.remove("full-width-container");
+    }
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function (e) {
   tinytabs(document.querySelector(".pe-c-fund-tabs"), {
     anchor: false,
@@ -470,4 +539,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
       recommended.style["box-shadow"] = "0px 1px 0px rgba(0, 12, 67, 0.1)";
     }
   });
+
+  // Carousel
+  initializeCtaListCarousel();
+  window.addEventListener("resize", changeCarouselConfiguration);
 });

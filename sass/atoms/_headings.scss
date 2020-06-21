@@ -73,3 +73,8 @@
     @include box(20px);
   }
 }
+
+.#{$prefix}h6 {
+  @include font(700, 1.125rem, 1.1, null);
+  color: $gray-900;
+}

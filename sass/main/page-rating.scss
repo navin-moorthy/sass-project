@@ -2,6 +2,8 @@
 @import "../utils/mixins";
 @import "../utils/placeholders";
 
+// Load all the sections here
+
 @import "../sections/header";
 @import "../sections/hero";
 @import "../sections/top_funds";
@@ -9,3 +11,8 @@
 @import "../sections/why-scripbox";
 @import "../sections/social-proof";
 @import "../sections/faq";
+@import "../sections/journey";
+
+// Always load the glide carousal at last for it to work
+@import "../vendor/glide.scss";
+@import "../vendor/glideTheme.scss";
