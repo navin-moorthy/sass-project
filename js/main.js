@@ -373,4 +373,60 @@ document.addEventListener("DOMContentLoaded", function (e) {
     anchor: false,
     hideTitle: true,
   });
+
+  tinytabs(document.querySelector(".pe-c-faq-tabs"), {
+    anchor: false,
+    hideTitle: true,
+  });
+
+  new handorgel(document.querySelector(".pe-c-faq-accordian__rating"), {
+    // whether multiple folds can be opened at once
+    multiSelectable: false,
+
+    // header/content class if fold is open
+    headerOpenClass: "pe-c-faq-accordian__rating__header--open",
+    contentOpenClass: "pe-c-faq-accordian__rating__content--open",
+
+    // header/content class if fold has been opened (transition finished)
+    headerOpenedClass: "pe-c-faq-accordian__rating__header--opened",
+    contentOpenedClass: "pe-c-faq-accordian__rating__content--opened",
+
+    // header/content class if fold has been focused
+    headerFocusClass: "pe-c-faq-accordian__rating__header--focus",
+    contentFocusClass: "pe-c-faq-accordian__rating__content--focus",
+  });
+
+  new handorgel(document.querySelector(".pe-c-faq-accordian__invest"), {
+    // whether multiple folds can be opened at once
+    multiSelectable: false,
+
+    // header/content class if fold is open
+    headerOpenClass: "pe-c-faq-accordian__invest__header--open",
+    contentOpenClass: "pe-c-faq-accordian__invest__content--open",
+
+    // header/content class if fold has been opened (transition finished)
+    headerOpenedClass: "pe-c-faq-accordian__invest__header--opened",
+    contentOpenedClass: "pe-c-faq-accordian__invest__content--opened",
+
+    // header/content class if fold has been focused
+    headerFocusClass: "pe-c-faq-accordian__invest__header--focus",
+    contentFocusClass: "pe-c-faq-accordian__invest__content--focus",
+  });
+
+  new handorgel(document.querySelector(".pe-c-faq-accordian__fees"), {
+    // whether multiple folds can be opened at once
+    multiSelectable: false,
+
+    // header/content class if fold is open
+    headerOpenClass: "pe-c-faq-accordian__fees__header--open",
+    contentOpenClass: "pe-c-faq-accordian__fees__content--open",
+
+    // header/content class if fold has been opened (transition finished)
+    headerOpenedClass: "pe-c-faq-accordian__fees__header--opened",
+    contentOpenedClass: "pe-c-faq-accordian__fees__content--opened",
+
+    // header/content class if fold has been focused
+    headerFocusClass: "pe-c-faq-accordian__fees__header--focus",
+    contentFocusClass: "pe-c-faq-accordian__fees__content--focus",
+  });
 });

@@ -183,4 +183,29 @@
     margin-bottom: 0;
   }
 }
+
+.pe-l-faq {
+  max-width: 730px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 3rem 0;
+}
+
+@media (min-width: 576px) {
+  .pe-l-faq {
+    padding-top: 3.875rem;
+    padding-bottom: 6.125rem;
+  }
+}
+
+.pe-l-faq .pe-h2 {
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .pe-l-faq .pe-h2 {
+    margin-bottom: 1rem;
+  }
+}
 /*# sourceMappingURL=page-rating.css.map */

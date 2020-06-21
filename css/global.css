@@ -342,6 +342,12 @@ figure {
   color: #ffffff;
 }
 
+.pe-p__faq {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #595959;
+}
+
 .pe-input__autocomplete {
   font-size: 0.875rem;
   width: 100%;
@@ -617,6 +623,36 @@ figure {
   background-image: url("../images/svg/not-recommended.svg");
 }
 
+.tabs {
+  display: flex;
+}
+
+.tabs .tab {
+  flex: 1;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.15;
+  padding: 10px 0;
+  color: #737373;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: inset 0px -1px 0px #e2e8f0;
+}
+
+.tabs .tab.sel {
+  color: #1971e4;
+  box-shadow: inset 0px -2px 0px #1971e4;
+}
+
+@media (min-width: 992px) {
+  .tabs .tab {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.12;
+    padding: 15px 0;
+  }
+}
+
 .pe-c-fund-card {
   padding: 10px 8px;
   border-bottom: 1px solid #e2e8f0;
@@ -789,36 +825,6 @@ figure {
   }
 }
 
-.pe-c-fund-tabs .tabs {
-  display: flex;
-}
-
-.pe-c-fund-tabs .tabs .tab {
-  flex: 1;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.15;
-  padding: 10px 0;
-  color: #737373;
-  text-align: center;
-  cursor: pointer;
-  box-shadow: inset 0px -1px 0px #e2e8f0;
-}
-
-.pe-c-fund-tabs .tabs .tab.sel {
-  color: #1971e4;
-  box-shadow: inset 0px -2px 0px #1971e4;
-}
-
-@media (min-width: 992px) {
-  .pe-c-fund-tabs .tabs .tab {
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 1.12;
-    padding: 15px 0;
-  }
-}
-
 .pe-c-fund-card-static {
   background: linear-gradient(0deg, #ffffff -106.25%, #eafff2 100%);
   box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.1);
@@ -949,5 +955,123 @@ figure {
   .pe-c-benefit-card__body {
     text-align: center;
   }
+}
+
+.pe-c-faq-accordian__rating,
+.pe-c-faq-accordian__invest,
+.pe-c-faq-accordian__fees {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.pe-c-faq-accordian__rating__header--focus .pe-c-faq-accordian__rating__header__button,
+.pe-c-faq-accordian__invest__header--focus .pe-c-faq-accordian__rating__header__button,
+.pe-c-faq-accordian__fees__header--focus .pe-c-faq-accordian__rating__header__button, .pe-c-faq-accordian__rating__header--focus
+.pe-c-faq-accordian__invest__header__button,
+.pe-c-faq-accordian__invest__header--focus
+.pe-c-faq-accordian__invest__header__button,
+.pe-c-faq-accordian__fees__header--focus
+.pe-c-faq-accordian__invest__header__button, .pe-c-faq-accordian__rating__header--focus
+.pe-c-faq-accordian__fees__header__button,
+.pe-c-faq-accordian__invest__header--focus
+.pe-c-faq-accordian__fees__header__button,
+.pe-c-faq-accordian__fees__header--focus
+.pe-c-faq-accordian__fees__header__button {
+  outline: none;
+  background: #f2f2f2;
+}
+
+.pe-c-faq-accordian__rating__header__button,
+.pe-c-faq-accordian__invest__header__button,
+.pe-c-faq-accordian__fees__header__button {
+  width: 100%;
+  text-align: left;
+  padding: 1rem 12px;
+  border-top: 1px solid #e2e8f0;
+  transition: background-color 0.2s ease;
+  user-select: none;
+  position: relative;
+}
+
+.pe-c-faq-accordian__rating__header__button:after,
+.pe-c-faq-accordian__invest__header__button:after,
+.pe-c-faq-accordian__fees__header__button:after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(https://www.dropbox.com/s/qsdo9qlczvsc9rg/cheveron-down.svg?raw=1);
+  top: 17px;
+  right: 10px;
+}
+
+.pe-c-faq-accordian__rating__header--open .pe-c-faq-accordian__rating__header__button:after,
+.pe-c-faq-accordian__invest__header--open .pe-c-faq-accordian__rating__header__button:after,
+.pe-c-faq-accordian__fees__header--open .pe-c-faq-accordian__rating__header__button:after, .pe-c-faq-accordian__rating__header--open
+.pe-c-faq-accordian__invest__header__button:after,
+.pe-c-faq-accordian__invest__header--open
+.pe-c-faq-accordian__invest__header__button:after,
+.pe-c-faq-accordian__fees__header--open
+.pe-c-faq-accordian__invest__header__button:after, .pe-c-faq-accordian__rating__header--open
+.pe-c-faq-accordian__fees__header__button:after,
+.pe-c-faq-accordian__invest__header--open
+.pe-c-faq-accordian__fees__header__button:after,
+.pe-c-faq-accordian__fees__header--open
+.pe-c-faq-accordian__fees__header__button:after {
+  background-image: url(../../images/svg/cheveron-up.svg);
+}
+
+.pe-c-faq-accordian__rating__content,
+.pe-c-faq-accordian__invest__content,
+.pe-c-faq-accordian__fees__content {
+  display: none;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.1s ease 0.1s;
+}
+
+.pe-c-faq-accordian__rating__content--open,
+.pe-c-faq-accordian__invest__content--open,
+.pe-c-faq-accordian__fees__content--open {
+  display: block;
+  transition: height 0.2s ease;
+}
+
+.pe-c-faq-accordian__rating__content--opened,
+.pe-c-faq-accordian__invest__content--opened,
+.pe-c-faq-accordian__fees__content--opened {
+  overflow: visible;
+}
+
+.pe-c-faq-accordian__rating__content--notransition,
+.pe-c-faq-accordian__invest__content--notransition,
+.pe-c-faq-accordian__fees__content--notransition {
+  transition: none;
+}
+
+.pe-c-faq-accordian__rating__content__inner,
+.pe-c-faq-accordian__invest__content__inner,
+.pe-c-faq-accordian__fees__content__inner {
+  padding: 0px 12px 1rem 12px;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.pe-c-faq-accordian__rating__content--opened .pe-c-faq-accordian__rating__content__inner,
+.pe-c-faq-accordian__invest__content--opened .pe-c-faq-accordian__rating__content__inner,
+.pe-c-faq-accordian__fees__content--opened .pe-c-faq-accordian__rating__content__inner, .pe-c-faq-accordian__rating__content--opened
+.pe-c-faq-accordian__invest__content__inner,
+.pe-c-faq-accordian__invest__content--opened
+.pe-c-faq-accordian__invest__content__inner,
+.pe-c-faq-accordian__fees__content--opened
+.pe-c-faq-accordian__invest__content__inner, .pe-c-faq-accordian__rating__content--opened
+.pe-c-faq-accordian__fees__content__inner,
+.pe-c-faq-accordian__invest__content--opened
+.pe-c-faq-accordian__fees__content__inner,
+.pe-c-faq-accordian__fees__content--opened
+.pe-c-faq-accordian__fees__content__inner {
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 /*# sourceMappingURL=global.css.map */

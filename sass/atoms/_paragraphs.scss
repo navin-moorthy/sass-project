@@ -49,3 +49,8 @@
   @include font(500, 14px, 1.4, null);
   color: $white;
 }
+
+.#{$prefix}p__faq {
+  @include font(null, 14px, 1.4, null);
+  color: $gray-600;
+}
