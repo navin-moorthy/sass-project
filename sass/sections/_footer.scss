@@ -1,0 +1,103 @@
+.#{$prefix}l-footer {
+  background: $footer-bg;
+  padding-top: 16px;
+  padding-bottom: 3.25rem;
+
+  @include sm {
+    padding-top: 4.1875rem;
+  }
+
+  &__mobile-logo {
+    margin-bottom: 20px;
+  }
+
+  &__accordion {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  &__mobile-download {
+    border-bottom: 1px solid #353b44;
+
+    p {
+      @include font(600, 14px, 1.14, null);
+      color: $white;
+      padding: 12px 0;
+    }
+
+    ul {
+      margin-top: 4px;
+      margin-bottom: 20px;
+    }
+
+    a {
+      @include font(500, 14px, 1.14, null);
+      padding: 10px 0;
+      color: #ffffff;
+      text-align: center;
+      background: #394455;
+      border-radius: 6px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 1.45;
+    }
+  }
+
+  &__info {
+    margin-top: 1rem;
+
+    p {
+      @include font(null, 13px, 1.4, null);
+      color: $gray-400;
+      margin-bottom: 1rem;
+
+      @include sm {
+        text-align: center;
+      }
+    }
+  }
+
+  &__top {
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  &__bottom {
+    padding-top: 42px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.#{$prefix}c-footer-list {
+  figure {
+    margin-bottom: 20px;
+    justify-content: flex-start;
+  }
+
+  svg {
+    margin-right: 12px;
+  }
+
+  p {
+    display: flex;
+    @include font(600, 13px, 1.1, null);
+    color: $white;
+    opacity: 0.5;
+    margin-bottom: 24px;
+  }
+
+  li {
+    display: flex;
+    @include font(500, 14px, 1.14, null);
+    color: $gray-300;
+    margin-bottom: 1rem;
+
+    .pe-l-footer__bottom & {
+      margin-bottom: 0.6rem;
+    }
+  }
+}

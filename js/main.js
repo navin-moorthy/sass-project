@@ -507,6 +507,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
   const ratingAccordion = new handorgel(document.querySelector(".pe-c-rating-accordion"), {
     // whether multiple folds can be opened at once
     multiSelectable: false,
+    // whether the folds are collapsible
+    collapsible: false,
 
     // header/content class if fold is open
     headerOpenClass: "pe-c-rating-accordion__header--open",
@@ -543,4 +545,38 @@ document.addEventListener("DOMContentLoaded", function (e) {
   // Carousel
   initializeCtaListCarousel();
   window.addEventListener("resize", changeCarouselConfiguration);
+
+  new handorgel(document.querySelector(".pe-c-footer__accordion1"), {
+    // whether multiple folds can be opened at once
+    multiSelectable: false,
+
+    // header/content class if fold is open
+    headerOpenClass: "pe-c-footer__accordion1__header--open",
+    contentOpenClass: "pe-c-footer__accordion1__content--open",
+
+    // header/content class if fold has been opened (transition finished)
+    headerOpenedClass: "pe-c-footer__accordion1__header--opened",
+    contentOpenedClass: "pe-c-footer__accordion1__content--opened",
+
+    // header/content class if fold has been focused
+    headerFocusClass: "pe-c-footer__accordion1__header--focus",
+    contentFocusClass: "pe-c-footer__accordion1__content--focus",
+  });
+
+  new handorgel(document.querySelector(".pe-c-footer__accordion2"), {
+    // whether multiple folds can be opened at once
+    multiSelectable: false,
+
+    // header/content class if fold is open
+    headerOpenClass: "pe-c-footer__accordion2__header--open",
+    contentOpenClass: "pe-c-footer__accordion2__content--open",
+
+    // header/content class if fold has been opened (transition finished)
+    headerOpenedClass: "pe-c-footer__accordion2__header--opened",
+    contentOpenedClass: "pe-c-footer__accordion2__content--opened",
+
+    // header/content class if fold has been focused
+    headerFocusClass: "pe-c-footer__accordion2__header--focus",
+    contentFocusClass: "pe-c-footer__accordion2__content--focus",
+  });
 });

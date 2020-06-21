@@ -329,6 +329,121 @@
   padding-top: 1rem;
 }
 
+.pe-l-footer {
+  background: #1b2330;
+  padding-top: 16px;
+  padding-bottom: 3.25rem;
+}
+
+@media (min-width: 576px) {
+  .pe-l-footer {
+    padding-top: 4.1875rem;
+  }
+}
+
+.pe-l-footer__mobile-logo {
+  margin-bottom: 20px;
+}
+
+.pe-l-footer__accordion {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.pe-l-footer__mobile-download {
+  border-bottom: 1px solid #353b44;
+}
+
+.pe-l-footer__mobile-download p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #ffffff;
+  padding: 12px 0;
+}
+
+.pe-l-footer__mobile-download ul {
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.pe-l-footer__mobile-download a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  padding: 10px 0;
+  color: #ffffff;
+  text-align: center;
+  background: #394455;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.45;
+}
+
+.pe-l-footer__info {
+  margin-top: 1rem;
+}
+
+.pe-l-footer__info p {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #b3b3b3;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 576px) {
+  .pe-l-footer__info p {
+    text-align: center;
+  }
+}
+
+.pe-l-footer__top {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pe-l-footer__bottom {
+  padding-top: 42px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pe-c-footer-list figure {
+  margin-bottom: 20px;
+  justify-content: flex-start;
+}
+
+.pe-c-footer-list svg {
+  margin-right: 12px;
+}
+
+.pe-c-footer-list p {
+  display: flex;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.1;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-bottom: 24px;
+}
+
+.pe-c-footer-list li {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #d9d9d9;
+  margin-bottom: 1rem;
+}
+
+.pe-l-footer__bottom .pe-c-footer-list li {
+  margin-bottom: 0.6rem;
+}
+
 .glide {
   position: relative;
   width: 100%;

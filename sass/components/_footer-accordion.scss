@@ -1,19 +1,21 @@
-.#{$prefix}c-faq-accordian__rating,
-.#{$prefix}c-faq-accordian__invest,
-.#{$prefix}c-faq-accordian__fees,
-.pe-l-footer__accordion {
-  border-bottom: 1px solid #e2e8f0;
+.#{$prefix}c-footer__accordion1,
+.#{$prefix}c-footer__accordion2 {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-right: -15px;
+  margin-left: -15px;
 
   &__header--focus &__header__button {
     outline: none;
-    background: $gray-100;
   }
 
   &__header__button {
     width: 100%;
+    @include font(600, 14px, 1.14, null);
     text-align: left;
-    padding: 1rem 12px;
-    border-top: 1px solid #e2e8f0;
+    color: $white;
+    padding: 12px 8px;
+    border-bottom: 1px solid #353b44;
     transition: $handorgel__header__button-transition;
     user-select: none;
     position: relative;
@@ -24,15 +26,17 @@
       @include box(16px);
       background-size: contain;
       background-repeat: no-repeat;
-      background-image: url(https://www.dropbox.com/s/qsdo9qlczvsc9rg/cheveron-down.svg?raw=1);
-      top: 17px;
+      background-image: url(../images/svg/cheveron-down-white.svg);
+      top: 12px;
       right: 10px;
     }
   }
 
   &__header--open &__header__button {
+    border-bottom: unset;
+
     &:after {
-      background-image: url(../../images/svg/cheveron-up.svg);
+      background-image: url(../../images/svg/cheveron-up-white.svg);
     }
   }
 
@@ -44,6 +48,7 @@
 
     &--open {
       display: block;
+      border-bottom: 1px solid #353b44;
       transition: $handorgel__content--open-transition;
     }
 
@@ -57,9 +62,15 @@
   }
 
   &__content__inner {
-    padding: 0px 12px 1rem 12px;
+    padding: 12px 8px;
     opacity: 0;
     transition: $handorgel__content__inner-transition;
+
+    li {
+      @include font(500, 13px, 0.62, null);
+      color: $gray-300;
+      margin-bottom: 1rem;
+    }
   }
 
   &__content--opened &__content__inner {

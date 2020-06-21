@@ -1017,30 +1017,44 @@ figure {
 
 .pe-c-faq-accordian__rating,
 .pe-c-faq-accordian__invest,
-.pe-c-faq-accordian__fees {
+.pe-c-faq-accordian__fees,
+.pe-l-footer__accordion {
   border-bottom: 1px solid #e2e8f0;
 }
 
 .pe-c-faq-accordian__rating__header--focus .pe-c-faq-accordian__rating__header__button,
 .pe-c-faq-accordian__invest__header--focus .pe-c-faq-accordian__rating__header__button,
-.pe-c-faq-accordian__fees__header--focus .pe-c-faq-accordian__rating__header__button, .pe-c-faq-accordian__rating__header--focus
+.pe-c-faq-accordian__fees__header--focus .pe-c-faq-accordian__rating__header__button,
+.pe-l-footer__accordion__header--focus .pe-c-faq-accordian__rating__header__button, .pe-c-faq-accordian__rating__header--focus
 .pe-c-faq-accordian__invest__header__button,
 .pe-c-faq-accordian__invest__header--focus
 .pe-c-faq-accordian__invest__header__button,
 .pe-c-faq-accordian__fees__header--focus
+.pe-c-faq-accordian__invest__header__button,
+.pe-l-footer__accordion__header--focus
 .pe-c-faq-accordian__invest__header__button, .pe-c-faq-accordian__rating__header--focus
 .pe-c-faq-accordian__fees__header__button,
 .pe-c-faq-accordian__invest__header--focus
 .pe-c-faq-accordian__fees__header__button,
 .pe-c-faq-accordian__fees__header--focus
-.pe-c-faq-accordian__fees__header__button {
+.pe-c-faq-accordian__fees__header__button,
+.pe-l-footer__accordion__header--focus
+.pe-c-faq-accordian__fees__header__button, .pe-c-faq-accordian__rating__header--focus
+.pe-l-footer__accordion__header__button,
+.pe-c-faq-accordian__invest__header--focus
+.pe-l-footer__accordion__header__button,
+.pe-c-faq-accordian__fees__header--focus
+.pe-l-footer__accordion__header__button,
+.pe-l-footer__accordion__header--focus
+.pe-l-footer__accordion__header__button {
   outline: none;
   background: #f2f2f2;
 }
 
 .pe-c-faq-accordian__rating__header__button,
 .pe-c-faq-accordian__invest__header__button,
-.pe-c-faq-accordian__fees__header__button {
+.pe-c-faq-accordian__fees__header__button,
+.pe-l-footer__accordion__header__button {
   width: 100%;
   text-align: left;
   padding: 1rem 12px;
@@ -1052,7 +1066,8 @@ figure {
 
 .pe-c-faq-accordian__rating__header__button:after,
 .pe-c-faq-accordian__invest__header__button:after,
-.pe-c-faq-accordian__fees__header__button:after {
+.pe-c-faq-accordian__fees__header__button:after,
+.pe-l-footer__accordion__header__button:after {
   content: "";
   position: absolute;
   width: 16px;
@@ -1066,23 +1081,36 @@ figure {
 
 .pe-c-faq-accordian__rating__header--open .pe-c-faq-accordian__rating__header__button:after,
 .pe-c-faq-accordian__invest__header--open .pe-c-faq-accordian__rating__header__button:after,
-.pe-c-faq-accordian__fees__header--open .pe-c-faq-accordian__rating__header__button:after, .pe-c-faq-accordian__rating__header--open
+.pe-c-faq-accordian__fees__header--open .pe-c-faq-accordian__rating__header__button:after,
+.pe-l-footer__accordion__header--open .pe-c-faq-accordian__rating__header__button:after, .pe-c-faq-accordian__rating__header--open
 .pe-c-faq-accordian__invest__header__button:after,
 .pe-c-faq-accordian__invest__header--open
 .pe-c-faq-accordian__invest__header__button:after,
 .pe-c-faq-accordian__fees__header--open
+.pe-c-faq-accordian__invest__header__button:after,
+.pe-l-footer__accordion__header--open
 .pe-c-faq-accordian__invest__header__button:after, .pe-c-faq-accordian__rating__header--open
 .pe-c-faq-accordian__fees__header__button:after,
 .pe-c-faq-accordian__invest__header--open
 .pe-c-faq-accordian__fees__header__button:after,
 .pe-c-faq-accordian__fees__header--open
-.pe-c-faq-accordian__fees__header__button:after {
+.pe-c-faq-accordian__fees__header__button:after,
+.pe-l-footer__accordion__header--open
+.pe-c-faq-accordian__fees__header__button:after, .pe-c-faq-accordian__rating__header--open
+.pe-l-footer__accordion__header__button:after,
+.pe-c-faq-accordian__invest__header--open
+.pe-l-footer__accordion__header__button:after,
+.pe-c-faq-accordian__fees__header--open
+.pe-l-footer__accordion__header__button:after,
+.pe-l-footer__accordion__header--open
+.pe-l-footer__accordion__header__button:after {
   background-image: url(../../images/svg/cheveron-up.svg);
 }
 
 .pe-c-faq-accordian__rating__content,
 .pe-c-faq-accordian__invest__content,
-.pe-c-faq-accordian__fees__content {
+.pe-c-faq-accordian__fees__content,
+.pe-l-footer__accordion__content {
   display: none;
   overflow: hidden;
   height: 0;
@@ -1091,26 +1119,30 @@ figure {
 
 .pe-c-faq-accordian__rating__content--open,
 .pe-c-faq-accordian__invest__content--open,
-.pe-c-faq-accordian__fees__content--open {
+.pe-c-faq-accordian__fees__content--open,
+.pe-l-footer__accordion__content--open {
   display: block;
   transition: height 0.2s ease;
 }
 
 .pe-c-faq-accordian__rating__content--opened,
 .pe-c-faq-accordian__invest__content--opened,
-.pe-c-faq-accordian__fees__content--opened {
+.pe-c-faq-accordian__fees__content--opened,
+.pe-l-footer__accordion__content--opened {
   overflow: visible;
 }
 
 .pe-c-faq-accordian__rating__content--notransition,
 .pe-c-faq-accordian__invest__content--notransition,
-.pe-c-faq-accordian__fees__content--notransition {
+.pe-c-faq-accordian__fees__content--notransition,
+.pe-l-footer__accordion__content--notransition {
   transition: none;
 }
 
 .pe-c-faq-accordian__rating__content__inner,
 .pe-c-faq-accordian__invest__content__inner,
-.pe-c-faq-accordian__fees__content__inner {
+.pe-c-faq-accordian__fees__content__inner,
+.pe-l-footer__accordion__content__inner {
   padding: 0px 12px 1rem 12px;
   opacity: 0;
   transition: opacity 0.1s ease;
@@ -1118,17 +1150,29 @@ figure {
 
 .pe-c-faq-accordian__rating__content--opened .pe-c-faq-accordian__rating__content__inner,
 .pe-c-faq-accordian__invest__content--opened .pe-c-faq-accordian__rating__content__inner,
-.pe-c-faq-accordian__fees__content--opened .pe-c-faq-accordian__rating__content__inner, .pe-c-faq-accordian__rating__content--opened
+.pe-c-faq-accordian__fees__content--opened .pe-c-faq-accordian__rating__content__inner,
+.pe-l-footer__accordion__content--opened .pe-c-faq-accordian__rating__content__inner, .pe-c-faq-accordian__rating__content--opened
 .pe-c-faq-accordian__invest__content__inner,
 .pe-c-faq-accordian__invest__content--opened
 .pe-c-faq-accordian__invest__content__inner,
 .pe-c-faq-accordian__fees__content--opened
+.pe-c-faq-accordian__invest__content__inner,
+.pe-l-footer__accordion__content--opened
 .pe-c-faq-accordian__invest__content__inner, .pe-c-faq-accordian__rating__content--opened
 .pe-c-faq-accordian__fees__content__inner,
 .pe-c-faq-accordian__invest__content--opened
 .pe-c-faq-accordian__fees__content__inner,
 .pe-c-faq-accordian__fees__content--opened
-.pe-c-faq-accordian__fees__content__inner {
+.pe-c-faq-accordian__fees__content__inner,
+.pe-l-footer__accordion__content--opened
+.pe-c-faq-accordian__fees__content__inner, .pe-c-faq-accordian__rating__content--opened
+.pe-l-footer__accordion__content__inner,
+.pe-c-faq-accordian__invest__content--opened
+.pe-l-footer__accordion__content__inner,
+.pe-c-faq-accordian__fees__content--opened
+.pe-l-footer__accordion__content__inner,
+.pe-l-footer__accordion__content--opened
+.pe-l-footer__accordion__content__inner {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
@@ -1558,5 +1602,115 @@ figure {
   width: 16px;
   height: 16px;
   margin-right: 12px;
+}
+
+.pe-c-footer__accordion1,
+.pe-c-footer__accordion2 {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.pe-c-footer__accordion1__header--focus .pe-c-footer__accordion1__header__button,
+.pe-c-footer__accordion2__header--focus .pe-c-footer__accordion1__header__button, .pe-c-footer__accordion1__header--focus
+.pe-c-footer__accordion2__header__button,
+.pe-c-footer__accordion2__header--focus
+.pe-c-footer__accordion2__header__button {
+  outline: none;
+}
+
+.pe-c-footer__accordion1__header__button,
+.pe-c-footer__accordion2__header__button {
+  width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: left;
+  color: #ffffff;
+  padding: 12px 8px;
+  border-bottom: 1px solid #353b44;
+  transition: background-color 0.2s ease;
+  user-select: none;
+  position: relative;
+}
+
+.pe-c-footer__accordion1__header__button:after,
+.pe-c-footer__accordion2__header__button:after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../images/svg/cheveron-down-white.svg);
+  top: 12px;
+  right: 10px;
+}
+
+.pe-c-footer__accordion1__header--open .pe-c-footer__accordion1__header__button,
+.pe-c-footer__accordion2__header--open .pe-c-footer__accordion1__header__button, .pe-c-footer__accordion1__header--open
+.pe-c-footer__accordion2__header__button,
+.pe-c-footer__accordion2__header--open
+.pe-c-footer__accordion2__header__button {
+  border-bottom: unset;
+}
+
+.pe-c-footer__accordion1__header--open .pe-c-footer__accordion1__header__button:after,
+.pe-c-footer__accordion2__header--open .pe-c-footer__accordion1__header__button:after, .pe-c-footer__accordion1__header--open
+.pe-c-footer__accordion2__header__button:after,
+.pe-c-footer__accordion2__header--open
+.pe-c-footer__accordion2__header__button:after {
+  background-image: url(../../images/svg/cheveron-up-white.svg);
+}
+
+.pe-c-footer__accordion1__content,
+.pe-c-footer__accordion2__content {
+  display: none;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.1s ease 0.1s;
+}
+
+.pe-c-footer__accordion1__content--open,
+.pe-c-footer__accordion2__content--open {
+  display: block;
+  border-bottom: 1px solid #353b44;
+  transition: height 0.2s ease;
+}
+
+.pe-c-footer__accordion1__content--opened,
+.pe-c-footer__accordion2__content--opened {
+  overflow: visible;
+}
+
+.pe-c-footer__accordion1__content--notransition,
+.pe-c-footer__accordion2__content--notransition {
+  transition: none;
+}
+
+.pe-c-footer__accordion1__content__inner,
+.pe-c-footer__accordion2__content__inner {
+  padding: 12px 8px;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.pe-c-footer__accordion1__content__inner li,
+.pe-c-footer__accordion2__content__inner li {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 0.62;
+  color: #d9d9d9;
+  margin-bottom: 1rem;
+}
+
+.pe-c-footer__accordion1__content--opened .pe-c-footer__accordion1__content__inner,
+.pe-c-footer__accordion2__content--opened .pe-c-footer__accordion1__content__inner, .pe-c-footer__accordion1__content--opened
+.pe-c-footer__accordion2__content__inner,
+.pe-c-footer__accordion2__content--opened
+.pe-c-footer__accordion2__content__inner {
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 /*# sourceMappingURL=global.css.map */
