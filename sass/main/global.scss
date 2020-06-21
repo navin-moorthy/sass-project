@@ -1,5 +1,6 @@
 @import "../utils/variables";
 @import "../utils/mixins";
+@import "../utils/placeholders";
 @import "../utils/common";
 
 @import "../atoms/headings";
@@ -14,11 +15,14 @@
 @import "../components/breadcrumb";
 @import "../components/recommended-border";
 @import "../components/badge";
-@import "../components/tabs";
 @import "../components/fund-card";
 @import "../components/autocomplete";
 @import "../components/brands-showcase";
 @import "../components/fund-tabs";
 @import "../components/fund-card-static";
 @import "../components/benefit-card";
+@import "../components/faq-tabs";
 @import "../components/faq-accordian";
+@import "../components/rating-accordion";
+@import "../components/rating-tabs";
+@import "../components/rating-card";

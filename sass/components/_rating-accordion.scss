@@ -1,37 +1,43 @@
-.#{$prefix}c-faq-accordian__rating,
-.#{$prefix}c-faq-accordian__invest,
-.#{$prefix}c-faq-accordian__fees {
-  border-bottom: 1px solid #e2e8f0;
+.#{$prefix}c-rating-accordion {
+  &__header--opened {
+    background: $white;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
 
   &__header--focus &__header__button {
     outline: none;
-    background: $gray-100;
   }
 
   &__header__button {
     width: 100%;
     text-align: left;
-    padding: 1rem 12px;
-    border-top: 1px solid #e2e8f0;
+    padding: 12px 12px 12px 2.25rem;
     transition: $handorgel__header__button-transition;
     user-select: none;
     position: relative;
 
-    &:after {
-      content: "";
+    &::before {
       position: absolute;
-      @include box(16px);
-      background-size: contain;
+      content: "";
       background-repeat: no-repeat;
-      background-image: url(https://www.dropbox.com/s/qsdo9qlczvsc9rg/cheveron-down.svg?raw=1);
-      top: 17px;
-      right: 10px;
+      background-size: contain;
+      width: 16px;
+      height: 16px;
+      top: 14px;
+      left: 12px;
     }
-  }
 
-  &__header--open &__header__button {
-    &:after {
-      background-image: url(../../images/svg/cheveron-up.svg);
+    &.recommended::before {
+      background-image: url(../images/svg/mark.svg);
+    }
+
+    &.top-ranked::before {
+      background-image: url(../images/svg/star-circled.svg);
+    }
+
+    &.not-recommended::before {
+      background-image: url(../images/svg/not-recommended.svg);
     }
   }
 
@@ -48,6 +54,9 @@
 
     &--opened {
       overflow: visible;
+      background: $white;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
     }
 
     &--notransition {
@@ -56,7 +65,7 @@
   }
 
   &__content__inner {
-    padding: 0px 12px 1rem 12px;
+    padding: 4px 12px 12px 12px;
     opacity: 0;
     transition: $handorgel__content__inner-transition;
   }

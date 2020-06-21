@@ -1,0 +1,98 @@
+%card {
+  position: relative;
+  box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.1), 0px 2px 3px rgba(0, 0, 0, 0.07);
+  background: #ffffff;
+  width: 100%;
+  padding: 16px 12px;
+  max-width: 255px;
+  width: 100%;
+
+  @include sm {
+    padding: 1.5rem;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+  }
+}
+
+%card-left {
+  max-width: 255px;
+}
+
+%card-right {
+  max-width: 285px;
+}
+
+.#{$prefix}c-rating-card {
+  &__top {
+    display: flex;
+
+    &-left {
+      @extend %card;
+      @extend %card-left;
+      border-radius: 6px 0 0 0;
+
+      @include sm {
+        padding: 1.5rem;
+      }
+
+      &::after {
+        height: 84px;
+        width: 2px;
+        background-image: url(../images/svg/vertical-line.svg);
+        right: -1px;
+        bottom: -42px;
+      }
+    }
+
+    &-right {
+      @extend %card;
+      @extend %card-right;
+      border-radius: 0 6px 0 0;
+
+      &::after {
+        height: 2px;
+        width: 84px;
+        background-image: url(../images/svg/horizantal-line.svg);
+        left: -42px;
+        bottom: -1px;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+
+    &-left {
+      @extend %card;
+      @extend %card-left;
+      border-radius: 0 0 0 6px;
+    }
+
+    &-right {
+      @extend %card;
+      @extend %card-right;
+      border-radius: 0 0 6px 0;
+    }
+  }
+
+  figure {
+    @include box(32px);
+    margin-bottom: 1.125rem;
+  }
+
+  h4 {
+    @include font(600, 1rem, 1.12, null);
+    color: $black;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    @include font(null, 14px, 1.5, null);
+    color: $gray-500;
+  }
+}

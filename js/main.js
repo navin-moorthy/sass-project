@@ -374,6 +374,11 @@ document.addEventListener("DOMContentLoaded", function (e) {
     hideTitle: true,
   });
 
+  tinytabs(document.querySelector(".pe-c-rating-tabs"), {
+    anchor: false,
+    hideTitle: true,
+  });
+
   tinytabs(document.querySelector(".pe-c-faq-tabs"), {
     anchor: false,
     hideTitle: true,
@@ -428,5 +433,41 @@ document.addEventListener("DOMContentLoaded", function (e) {
     // header/content class if fold has been focused
     headerFocusClass: "pe-c-faq-accordian__fees__header--focus",
     contentFocusClass: "pe-c-faq-accordian__fees__content--focus",
+  });
+
+  const ratingAccordion = new handorgel(document.querySelector(".pe-c-rating-accordion"), {
+    // whether multiple folds can be opened at once
+    multiSelectable: false,
+
+    // header/content class if fold is open
+    headerOpenClass: "pe-c-rating-accordion__header--open",
+    contentOpenClass: "pe-c-rating-accordion__content--open",
+
+    // header/content class if fold has been opened (transition finished)
+    headerOpenedClass: "pe-c-rating-accordion__header--opened",
+    contentOpenedClass: "pe-c-rating-accordion__content--opened",
+
+    // header/content class if fold has been focused
+    headerFocusClass: "pe-c-rating-accordion__header--focus",
+    contentFocusClass: "pe-c-rating-accordion__content--focus",
+  });
+
+  ratingAccordion.on("fold:open", (fold) => {
+    const recommended = document.querySelector(".pe-p__rating-button.recommended");
+    const topRanked = document.querySelector(".pe-p__rating-button.top-ranked");
+    if (fold.id === "handorgel4-fold1") {
+      recommended.style["box-shadow"] = "unset";
+      topRanked.style["box-shadow"] = "0px 1px 0px rgba(0, 12, 67, 0.1)";
+    }
+
+    if (fold.id === "handorgel4-fold2") {
+      console.dir(fold.content);
+      topRanked.style["box-shadow"] = "unset";
+    }
+
+    if (fold.id === "handorgel4-fold3") {
+      console.dir(fold.content);
+      recommended.style["box-shadow"] = "0px 1px 0px rgba(0, 12, 67, 0.1)";
+    }
   });
 });

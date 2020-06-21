@@ -54,3 +54,13 @@
   @include font(null, 14px, 1.4, null);
   color: $gray-600;
 }
+
+.#{$prefix}p__rating-recommendation {
+  @include font(600, 14px, 1.4, null);
+  color: $gray-800;
+}
+
+.#{$prefix}p__rating-button {
+  @include font(500, 14px, 1.4, null);
+  color: $gray-700;
+}

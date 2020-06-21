@@ -1,0 +1,25 @@
+%primary-tab {
+  .tabs {
+    display: flex;
+
+    .tab {
+      flex: 1;
+      @include font(600, 14px, 1.15, null);
+      padding: 10px 0;
+      color: $gray-500;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: inset 0px -1px 0px #e2e8f0;
+
+      &.sel {
+        color: $blue-600;
+        box-shadow: inset 0px -2px 0px $blue-600;
+      }
+
+      @include lg {
+        @include font(600, 1rem, 1.12, null);
+        padding: 15px 0;
+      }
+    }
+  }
+}

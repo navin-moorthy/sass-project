@@ -107,6 +107,107 @@
   }
 }
 
+.pe-l-rating-method {
+  padding: 2rem 0;
+  background: #ebf8ff;
+}
+
+@media (min-width: 992px) {
+  .pe-l-rating-method {
+    padding: 4rem 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pe-l-rating-method {
+    padding: 8rem 0 6rem 0;
+  }
+}
+
+.pe-l-rating-method__grid {
+  display: grid;
+  grid-template-rows: 0fr 1fr;
+  grid-auto-rows: minmax(min-content, max-content);
+  gap: 0rem 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas: "intro-section-rating-method" "fund-types" "accordion-header" "accordion";
+}
+
+@media (min-width: 992px) {
+  .pe-l-rating-method__grid {
+    grid-template-columns: 5fr 7fr;
+    grid-template-areas: "intro-section-rating-method fund-types" "accordion fund-types";
+  }
+}
+
+.pe-l-rating-method__intro {
+  text-align: center;
+  max-width: 314px;
+  margin: 0 auto;
+  grid-area: intro-section-rating-method;
+  margin-bottom: 30px;
+}
+
+.pe-l-rating-method__intro .pe-p__faq {
+  margin-bottom: 8px;
+}
+
+@media (min-width: 576px) {
+  .pe-l-rating-method__intro .pe-p__faq {
+    margin-bottom: 12px;
+  }
+}
+
+.pe-l-rating-method__intro .pe-h2 {
+  margin-bottom: 12px;
+}
+
+@media (min-width: 576px) {
+  .pe-l-rating-method__intro .pe-h2 {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  .pe-l-rating-method__intro .pe-p__medium {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 576px) {
+  .pe-l-rating-method__intro {
+    max-width: none;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .pe-l-rating-method__intro {
+    text-align: left;
+  }
+}
+
+.pe-l-rating-method .pe-p__rating-recommendation {
+  padding: 1.25rem 0rem;
+  margin: 0 auto;
+  grid-area: accordion-header;
+}
+
+.pe-l-rating-method .pe-c-rating-accordion {
+  grid-area: accordion;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .pe-l-rating-method .pe-c-rating-accordion {
+    max-width: 350px;
+  }
+}
+
+.pe-l-rating-method .pe-c-rating-tabs {
+  grid-area: fund-types;
+}
+
 .pe-l-why-scripbox {
   padding: 2.5rem 0;
   background-color: #f9f8f3;

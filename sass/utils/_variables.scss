@@ -79,3 +79,40 @@ $transition-base: 0.15s ease-in-out;
 // Z-index
 
 $z-index-autocomplete: 10;
+
+// Accordion
+
+// Variables for closing transition
+
+$handorgel__content-transition-opacity-time: 0.1s !default;
+$handorgel__content-transition-opacity-method: ease !default;
+
+$handorgel__content-transition-height-time: 0.1s !default;
+$handorgel__content-transition-height-delay: $handorgel__content-transition-opacity-time !default;
+$handorgel__content-transition-height-method: ease !default;
+
+$handorgel__header__button-transition-background-color-time: 0.2s !default;
+$handorgel__header__button-transition-background-color-method: ease !default;
+
+$handorgel__content-transition: height $handorgel__content-transition-height-time
+  $handorgel__content-transition-height-method $handorgel__content-transition-height-delay !default;
+
+$handorgel__header__button-transition: background-color $handorgel__header__button-transition-background-color-time
+  $handorgel__header__button-transition-background-color-method !default;
+
+$handorgel__content__inner-transition: opacity $handorgel__content-transition-opacity-time
+  $handorgel__content-transition-opacity-method !default;
+
+// Variables for opening transition
+
+$handorgel__content--open-transition-height-time: 0.2s !default;
+$handorgel__content--open-transition-height-method: ease !default;
+
+$handorgel__content--open-transition-opacity-time: 0.3s !default;
+$handorgel__content--open-transition-opacity-method: ease !default;
+
+$handorgel__content--open-transition: height $handorgel__content--open-transition-height-time
+  $handorgel__content--open-transition-height-method !default;
+
+$handorgel__content--opened__inner-transition: opacity $handorgel__content--open-transition-opacity-time
+  $handorgel__content--open-transition-opacity-method !default;
