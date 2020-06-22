@@ -4,7 +4,7 @@
   background: $orange-400;
   width: 100%;
   padding: 1rem;
-  transform: translateY(-180px);
+  transform: translateY(-228px);
   transition: transform 0.3s;
   z-index: $z-index-menu;
 
@@ -25,6 +25,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: $z-index-overlay;
     opacity: 0;
+    visibility: hidden;
     transition: opacity 0.3s;
   }
 
@@ -38,6 +39,7 @@
   }
 
   &--open &__overlay {
+    visibility: visible;
     opacity: 1;
   }
 }

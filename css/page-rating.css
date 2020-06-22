@@ -34,7 +34,7 @@
   background: #f58024;
   width: 100%;
   padding: 1rem;
-  transform: translateY(-180px);
+  transform: translateY(-228px);
   transition: transform 0.3s;
   z-index: 100;
 }
@@ -100,6 +100,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 50;
   opacity: 0;
+  visibility: hidden;
   transition: opacity 0.3s;
 }
 
@@ -113,6 +114,7 @@
 }
 
 .pe-c-menu--open .pe-c-menu__overlay {
+  visibility: visible;
   opacity: 1;
 }
 
