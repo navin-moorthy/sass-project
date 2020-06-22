@@ -1,4 +1,7 @@
 .#{$prefix}button-primary {
+  // font-weight: 600;
+  // font-size: 14px;
+  // line-height: 16px;
   @include font(600, 14px, 1.4, null);
   color: $white;
   background: transparent;
