@@ -28,62 +28,6 @@
   }
 }
 
-.pe-c-brand__logo {
-  width: 90px;
-  height: 25px;
-}
-
-@media (min-width: 576px) {
-  .pe-c-brand__logo {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.pe-c-nav__link, .pe-c-nav__link--inverse {
-  display: flex;
-  align-items: center;
-  border-radius: 8px;
-  transition: 0.15s ease-in-out;
-  padding: 0.5rem 0.75rem;
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1;
-}
-
-.pe-c-nav__link:hover, .pe-c-nav__link--inverse:hover, .pe-c-nav__link:active, .pe-c-nav__link--inverse:active, .pe-c-nav__link:focus, .pe-c-nav__link--inverse:focus {
-  outline: none;
-}
-
-.pe-c-nav__link {
-  color: #ffffff;
-}
-
-.pe-c-nav__link-icon {
-  width: 20px;
-  height: 20px;
-}
-
-@media (min-width: 576px) {
-  .pe-c-nav__link-icon {
-    width: 16px;
-    height: 16px;
-  }
-}
-
-.pe-c-nav__link:hover, .pe-c-nav__link:active, .pe-c-nav__link:focus {
-  background-color: #dd6b20;
-}
-
-.pe-c-nav__link--inverse {
-  color: #dd6b20;
-  background: #ffffff;
-}
-
-.pe-c-nav__link--inverse:hover, .pe-c-nav__link--inverse:active, .pe-c-nav__link--inverse:focus {
-  background-color: #f9f9f9;
-}
-
 .pe-c-menu__hamburger {
   position: relative;
   width: 20px;
@@ -135,6 +79,18 @@
 
 .pe-l-header {
   background: #f58024;
+}
+
+.pe-l-header__logo {
+  width: 90px;
+  height: 25px;
+}
+
+@media (min-width: 576px) {
+  .pe-l-header__logo {
+    width: initial;
+    height: initial;
+  }
 }
 
 .pe-c-breadcrumb__link {

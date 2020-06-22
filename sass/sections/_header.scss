@@ -1,7 +1,13 @@
-@import "../components/brand";
-@import "../components/nav";
 @import "../components/menu";
 
 .#{$prefix}l-header {
   background: $orange-400;
+
+  &__logo {
+    @include box(90px, 25px);
+
+    @include sm {
+      @include box(initial, initial);
+    }
+  }
 }

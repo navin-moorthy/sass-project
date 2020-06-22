@@ -49,8 +49,7 @@
 
 @mixin hamburger($width, $height) {
   position: relative;
-  width: $width;
-  height: $height;
+  @include box($width, $height);
   cursor: pointer;
 
   span {
