@@ -1,8 +1,8 @@
 @import "../components/breadcrumb";
+@import "../components/autocomplete";
+@import "../components/fund-card";
 @import "../components/recommended-border";
 @import "../components/badge";
-@import "../components/fund-card";
-@import "../components/autocomplete";
 @import "../components/brands-showcase";
 
 .#{$prefix}l-hero {
@@ -22,6 +22,32 @@
     @include lg {
       height: 100%;
       max-width: 400px;
+    }
+  }
+
+  .pe-h1 {
+    color: $white;
+
+    @include sm {
+      color: $gray-900;
+    }
+
+    @include lg {
+      margin-bottom: 0.75rem !important;
+    }
+  }
+
+  .pe-p__lead {
+    color: $white;
+    opacity: 0.9;
+
+    @include sm {
+      color: $gray-600;
+      opacity: 1;
+    }
+
+    @include md {
+      margin-bottom: 1.75rem !important;
     }
   }
 }

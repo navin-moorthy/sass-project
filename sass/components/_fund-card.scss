@@ -1,7 +1,6 @@
 .#{$prefix}c-fund-card {
   padding: 10px 8px;
   border-bottom: 1px solid #e2e8f0;
-  cursor: pointer;
 
   &__logo {
     @include box(48px);
@@ -12,6 +11,15 @@
   &__info {
     min-width: 200px;
     max-width: 300px;
+
+    .pe-h5 {
+      color: $gray-900;
+      margin-bottom: 10px;
+    }
+
+    .pe-p2 {
+      color: $gray-500;
+    }
   }
 }
 

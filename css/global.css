@@ -69,58 +69,11 @@ figure {
   margin-left: 0.675rem !important;
 }
 
-.m-2-5 {
-  margin: 0.75rem !important;
-}
-
-.mt-2-5,
-.my-2-5 {
-  margin-top: 0.75rem !important;
-}
-
-.mr-2-5,
-.mx-2-5 {
-  margin-right: 0.75rem !important;
-}
-
-.mb-2-5,
-.my-2-5 {
-  margin-bottom: 0.75rem !important;
-}
-
-.ml-2-5,
-.mx-2-5 {
-  margin-left: 0.75rem !important;
-}
-
-@media (min-width: 992px) {
-  .m-lg-2-5 {
-    margin: 0.75rem !important;
-  }
-  .mt-lg-2-5,
-  .my-lg-2-5 {
-    margin-top: 0.75rem !important;
-  }
-  .mr-lg-2-5,
-  .mx-lg-2-5 {
-    margin-right: 0.75rem !important;
-  }
-  .mb-lg-2-5,
-  .my-lg-2-5 {
-    margin-bottom: 0.75rem !important;
-  }
-  .ml-lg-2-5,
-  .mx-lg-2-5 {
-    margin-left: 0.75rem !important;
-  }
-}
-
 .pe-h1 {
   font-weight: 700;
   font-size: 1.375rem;
   line-height: 1.1;
   letter-spacing: 0.01em;
-  color: #ffffff;
 }
 
 @media (min-width: 576px) {
@@ -128,7 +81,6 @@ figure {
     font-size: 1.875rem;
     line-height: 1.3;
     letter-spacing: 0.02em;
-    color: #181818;
   }
 }
 
@@ -137,6 +89,12 @@ figure {
     font-size: 2.25rem;
     line-height: 1.1;
   }
+}
+
+.pe-h5 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
 }
 
 .pe-h2 {
@@ -191,14 +149,6 @@ figure {
   }
 }
 
-.pe-h5 {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.2;
-  color: #181818;
-  margin-bottom: 10px;
-}
-
 .pe-h2__social-proof {
   font-weight: 700;
   font-size: 1.375rem;
@@ -239,24 +189,30 @@ figure {
 .pe-p__lead {
   font-size: 15px;
   line-height: 1.3;
-  color: #ffffff;
-  opacity: 0.9;
 }
 
 @media (min-width: 576px) {
   .pe-p__lead {
     font-size: 1rem;
     line-height: 1.5;
-    color: #595959;
-    opacity: 1;
   }
 }
 
 @media (min-width: 768px) {
   .pe-p__lead {
     font-size: 1.125rem;
-    margin-bottom: 1.75rem !important;
+    line-height: 1.6;
   }
+}
+
+.pe-p1 {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.pe-p2 {
+  font-size: 13px;
+  line-height: 1.2;
 }
 
 .pe-p__medium {
@@ -282,12 +238,6 @@ figure {
   .pe-p__sm {
     font-size: 13px;
   }
-}
-
-.pe-p__small {
-  font-size: 13px;
-  line-height: 1.2;
-  color: #737373;
 }
 
 .pe-p__invest-card {
@@ -321,11 +271,6 @@ figure {
   font-size: 14px;
   line-height: 1.4;
   color: #404040;
-}
-
-.pe-p1 {
-  font-size: 14px;
-  line-height: 1.4;
 }
 
 .pe-input__autocomplete {

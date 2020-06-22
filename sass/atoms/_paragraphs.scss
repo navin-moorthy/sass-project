@@ -1,18 +1,29 @@
 .#{$prefix}p__lead {
+  // font-size: 15px;
+  // line-height: 20px;
   @include font(null, 15px, 1.3, null);
-  color: ($white);
-  opacity: 0.9;
 
   @include sm {
+    // font-size: 16px;
+    // line-height: 24px;
     @include font(null, 1rem, 1.5, null);
-    color: $gray-600;
-    opacity: 1;
   }
 
   @include md {
-    @include font(null, 1.125rem, null, null);
-    margin-bottom: 1.75rem !important;
+    // font-size: 18px;
+    // line-height: 28px;
+    @include font(null, 1.125rem, 1.6, null);
   }
+}
+
+.#{$prefix}p1 {
+  // font-size: 14px;
+  // line-height: 20px;
+  @include font(null, 14px, 1.4, null);
+}
+
+.#{$prefix}p2 {
+  @include font(null, 13px, 1.2, null);
 }
 
 .#{$prefix}p__medium {
@@ -31,11 +42,6 @@
   @include md {
     @include font(null, 13px, null, null);
   }
-}
-
-.#{$prefix}p__small {
-  @include font(null, 13px, 1.2, null);
-  color: $gray-500;
 }
 
 // Better Solution
@@ -63,8 +69,4 @@
 .#{$prefix}p__rating-button {
   @include font(500, 14px, 1.4, null);
   color: $gray-700;
-}
-
-.#{$prefix}p1 {
-  @include font(null, 14px, 1.4, null);
 }

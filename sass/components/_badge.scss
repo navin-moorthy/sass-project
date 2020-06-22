@@ -1,8 +1,11 @@
 .#{$prefix}c-badge {
-  font-weight: 500;
   position: relative;
+  // font-weight: 500;
+  // font-size: 13px;
+  // line-height: 15px;
+  @include font(500, 13px, 1.15, null);
   padding: 2px 6px 2px 1.375rem;
-  border-radius: 6px;
+  border-radius: $border-radius-1-5;
   text-transform: capitalize;
 
   &:before {
@@ -13,7 +16,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     left: 6px;
-    top: 3.8px;
+    top: 3.5px;
   }
 
   &.recommended {

@@ -1,4 +1,6 @@
 .#{$prefix}input__autocomplete {
+  // font-size: 14px;
+  // line-height: 16px;
   @include font(null, 0.875rem, null, null);
   width: 100%;
   padding: 0.75rem 2.5rem 0.75rem 1rem;
@@ -15,6 +17,7 @@
   }
 
   @include sm {
+    // font-size: 16px;
     @include font(null, 1rem, null, null);
     padding: 0.875rem 3rem 0.875rem 1rem;
     background-size: 1.125rem;
