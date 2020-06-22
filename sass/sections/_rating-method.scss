@@ -49,7 +49,7 @@
       text-align: left;
     }
 
-    .pe-p1 {
+    .pe-p__sm {
       color: $gray-600;
       margin-bottom: 0.5rem;
 
@@ -75,11 +75,12 @@
     }
   }
 
-  .pe-p3 {
+  .pe-p__sm {
     grid-area: accordion-header;
     padding: 1.25rem 0rem;
     margin: 0 auto;
     color: $gray-800;
+    font-weight: 600;
   }
 
   .pe-c-rating-accordion {

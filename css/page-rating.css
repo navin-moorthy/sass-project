@@ -335,7 +335,7 @@
   }
 }
 
-.pe-c-fund-card__info .pe-p2 {
+.pe-c-fund-card__info .pe-p__xs {
   color: #737373;
 }
 
@@ -782,7 +782,7 @@
   transition: none;
 }
 
-.pe-c-rating-accordion__content .pe-p1 {
+.pe-c-rating-accordion__content .pe-p__sm {
   color: #595959;
 }
 
@@ -1037,13 +1037,13 @@
   }
 }
 
-.pe-l-rating-method__intro .pe-p1 {
+.pe-l-rating-method__intro .pe-p__sm {
   color: #595959;
   margin-bottom: 0.5rem;
 }
 
 @media (min-width: 576px) {
-  .pe-l-rating-method__intro .pe-p1 {
+  .pe-l-rating-method__intro .pe-p__sm {
     margin-bottom: 12px;
   }
 }
@@ -1068,11 +1068,12 @@
   }
 }
 
-.pe-l-rating-method .pe-p3 {
+.pe-l-rating-method .pe-p__sm {
   grid-area: accordion-header;
   padding: 1.25rem 0rem;
   margin: 0 auto;
   color: #343434;
+  font-weight: 600;
 }
 
 .pe-l-rating-method .pe-c-rating-accordion {
@@ -1114,7 +1115,7 @@
   }
 }
 
-.pe-c-benefit-card__body .pe-p1 {
+.pe-c-benefit-card__body .pe-p__sm {
   color: #737373;
 }
 
@@ -1209,13 +1210,16 @@
 }
 
 .pe-l-social-proof__info .pe-h3 {
-  color: #ffffff;
   margin-bottom: 8px;
 }
 
 .pe-l-social-proof__info .pe-h3 img {
   width: 20px;
   height: 20px;
+}
+
+.pe-l-social-proof__info .pe-p__sm {
+  font-weight: 500;
 }
 
 .pe-c-faq-accordian__rating,
@@ -1399,19 +1403,19 @@
   }
 }
 
-.pe-c-journey-card__info .pe-p1 {
+.pe-c-journey-card__info .pe-p__sm {
   color: #595959;
   max-width: 220px;
 }
 
 @media (min-width: 576px) {
-  .pe-c-journey-card__info .pe-p1 {
+  .pe-c-journey-card__info .pe-p__sm {
     max-width: 270px;
   }
 }
 
 @media (min-width: 768px) {
-  .pe-c-journey-card__info .pe-p1 {
+  .pe-c-journey-card__info .pe-p__sm {
     max-width: 180px;
   }
 }

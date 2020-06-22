@@ -158,27 +158,14 @@ figure {
   }
 }
 
-.pe-p1 {
+.pe-p__sm {
   font-size: 14px;
   line-height: 1.4;
 }
 
-.pe-p2 {
+.pe-p__xs {
   font-size: 13px;
   line-height: 1.2;
-}
-
-.pe-p3 {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.pe-p4 {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.4;
-  color: #ffffff;
 }
 
 .pe-input__autocomplete {

@@ -423,7 +423,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 ${data && data.value ? data.value.title : ""}
               </h6>
               <div class="d-flex align-items-center">
-                <p class="pe-p2 mr-2">${data && data.value ? data.value.cap : ""}</p>
+                <p class="pe-p__xs mr-2">${data && data.value ? data.value.cap : ""}</p>
                 <p class="pe-c-badge ${data.value.type}">${data && data.value ? data.value.type : ""}</p>
               </div>
             </div>
