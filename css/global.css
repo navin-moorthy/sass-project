@@ -127,13 +127,32 @@ figure {
   line-height: 1.2;
 }
 
-.pe-p__medium {
+.pe-p__lg {
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+@media (min-width: 576px) {
+  .pe-p__lg {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 768px) {
+  .pe-p__lg {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+}
+
+.pe-p__md {
   font-size: 14px;
   line-height: 1.5;
 }
 
 @media (min-width: 576px) {
-  .pe-p__medium {
+  .pe-p__md {
     font-size: 1rem;
     line-height: 1.6;
   }
@@ -142,25 +161,6 @@ figure {
 .pe-p1 {
   font-size: 14px;
   line-height: 1.4;
-}
-
-.pe-p__lead {
-  font-size: 15px;
-  line-height: 1.3;
-}
-
-@media (min-width: 576px) {
-  .pe-p__lead {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width: 768px) {
-  .pe-p__lead {
-    font-size: 1.125rem;
-    line-height: 1.6;
-  }
 }
 
 .pe-p2 {
