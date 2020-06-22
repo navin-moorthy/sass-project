@@ -31,8 +31,12 @@
   &.long-term-wealth-card {
     background: linear-gradient(0deg, #ffffff -106.25%, #eafff2 100%);
 
+    .pe-button--primary {
+      background: $green-500;
+    }
+
     &:hover {
-      .pe-button-primary {
+      .pe-button--primary {
         background-color: $green-600;
       }
     }
@@ -41,8 +45,12 @@
   &.short-term-wealth-card {
     background: linear-gradient(360deg, #f7e4b9 -102.12%, #fef8eb 109.19%);
 
+    .pe-button--primary {
+      background: $orange-400;
+    }
+
     &:hover {
-      .pe-button-primary {
+      .pe-button--primary {
         background-color: $orange-500;
       }
     }
@@ -51,8 +59,12 @@
   &.save-tax-card {
     background: linear-gradient(180deg, #eef9ff 10.95%, #cce2ff 246.29%);
 
+    .pe-button--primary {
+      background: $blue-500;
+    }
+
     &:hover {
-      .pe-button-primary {
+      .pe-button--primary {
         background-color: $blue-600;
       }
     }
@@ -61,8 +73,12 @@
   &.emergency-ready-card {
     background: linear-gradient(180deg, #fff5f5 13.75%, #fed7d7 420%);
 
+    .pe-button--primary {
+      background: $pink-400;
+    }
+
     &:hover {
-      .pe-button-primary {
+      .pe-button--primary {
         background-color: $pink-500;
       }
     }

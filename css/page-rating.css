@@ -32,7 +32,11 @@
   background: linear-gradient(0deg, #ffffff -106.25%, #eafff2 100%);
 }
 
-.long-term-wealth-card.pe-c-fund-card-static:hover .pe-button-primary, .long-term-wealth-card.pe-c-journey-card:hover .pe-button-primary {
+.long-term-wealth-card.pe-c-fund-card-static .pe-button--primary, .long-term-wealth-card.pe-c-journey-card .pe-button--primary {
+  background: #0fac85;
+}
+
+.long-term-wealth-card.pe-c-fund-card-static:hover .pe-button--primary, .long-term-wealth-card.pe-c-journey-card:hover .pe-button--primary {
   background-color: #1c9778;
 }
 
@@ -40,7 +44,11 @@
   background: linear-gradient(360deg, #f7e4b9 -102.12%, #fef8eb 109.19%);
 }
 
-.short-term-wealth-card.pe-c-fund-card-static:hover .pe-button-primary, .short-term-wealth-card.pe-c-journey-card:hover .pe-button-primary {
+.short-term-wealth-card.pe-c-fund-card-static .pe-button--primary, .short-term-wealth-card.pe-c-journey-card .pe-button--primary {
+  background: #f58024;
+}
+
+.short-term-wealth-card.pe-c-fund-card-static:hover .pe-button--primary, .short-term-wealth-card.pe-c-journey-card:hover .pe-button--primary {
   background-color: #dd6b20;
 }
 
@@ -48,7 +56,11 @@
   background: linear-gradient(180deg, #eef9ff 10.95%, #cce2ff 246.29%);
 }
 
-.save-tax-card.pe-c-fund-card-static:hover .pe-button-primary, .save-tax-card.pe-c-journey-card:hover .pe-button-primary {
+.save-tax-card.pe-c-fund-card-static .pe-button--primary, .save-tax-card.pe-c-journey-card .pe-button--primary {
+  background: #007aff;
+}
+
+.save-tax-card.pe-c-fund-card-static:hover .pe-button--primary, .save-tax-card.pe-c-journey-card:hover .pe-button--primary {
   background-color: #1971e4;
 }
 
@@ -56,7 +68,11 @@
   background: linear-gradient(180deg, #fff5f5 13.75%, #fed7d7 420%);
 }
 
-.emergency-ready-card.pe-c-fund-card-static:hover .pe-button-primary, .emergency-ready-card.pe-c-journey-card:hover .pe-button-primary {
+.emergency-ready-card.pe-c-fund-card-static .pe-button--primary, .emergency-ready-card.pe-c-journey-card .pe-button--primary {
+  background: #ed64a6;
+}
+
+.emergency-ready-card.pe-c-fund-card-static:hover .pe-button--primary, .emergency-ready-card.pe-c-journey-card:hover .pe-button--primary {
   background-color: #d53f8c;
 }
 
@@ -244,19 +260,6 @@
   display: inline-block;
 }
 
-.pe-c-recommended__border {
-  width: 4px;
-  height: 48px;
-  background: transparent;
-  border-radius: 27px;
-  margin-right: 2px;
-  flex-shrink: 0;
-}
-
-.pe-c-recommended__border--active {
-  background: #f58024;
-}
-
 .pe-c-badge {
   position: relative;
   font-weight: 500;
@@ -362,6 +365,19 @@
   .pe-c-fund-options__bottom {
     font-size: 13px;
   }
+}
+
+.pe-c-recommended__border {
+  width: 4px;
+  height: 48px;
+  background: transparent;
+  border-radius: 27px;
+  margin-right: 2px;
+  flex-shrink: 0;
+}
+
+.pe-c-recommended__border--active {
+  background: #f58024;
 }
 
 .pe-c-brands-showcase {
