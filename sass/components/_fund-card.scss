@@ -15,7 +15,7 @@
     min-width: 200px;
     max-width: 300px;
 
-    .pe-h5 {
+    .pe-h6 {
       color: $gray-900;
       margin-bottom: 10px;
     }
@@ -56,7 +56,11 @@
   &__bottom {
     // font-size: 13px;
     // line-height: 15px;
-    @include font(null, 13px, 1.3, null);
+    @include font(null, 12px, 1.3, null);
     color: $gray-500;
+
+    @include mobile {
+      @include font(null, 13px, null, null);
+    }
   }
 }

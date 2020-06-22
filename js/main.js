@@ -419,9 +419,9 @@ document.addEventListener("DOMContentLoaded", function (e) {
               <img src="${data.value && data.value.meta ? data.value.meta.image : ""}" alt="${data.match}" />
             </figure>
             <div class="pe-c-fund-card__info flex-fill">
-              <h5 class="pe-h5 pe-overflow-ellipsis">
+              <h6 class="pe-h6 pe-overflow-ellipsis">
                 ${data && data.value ? data.value.title : ""}
-              </h5>
+              </h6>
               <div class="d-flex align-items-center">
                 <p class="pe-p2 mr-2">${data && data.value ? data.value.cap : ""}</p>
                 <p class="pe-c-badge ${data.value.type}">${data && data.value ? data.value.type : ""}</p>

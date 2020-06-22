@@ -12,6 +12,12 @@
 
 // Responsiveness
 
+@mixin mobile {
+  @media (min-width: $mobile * 1px) {
+    @content;
+  }
+}
+
 @mixin sm {
   @media (min-width: $sm * 1px) {
     @content;

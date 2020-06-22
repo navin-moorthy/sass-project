@@ -1,3 +1,5 @@
+@import "../components/rating-card";
+
 .#{$prefix}c-rating-tabs {
   position: relative;
   overflow: hidden;
@@ -7,8 +9,8 @@
   }
 
   .tabs {
-    display: inline-flex;
-    border-radius: 6px;
+    display: flex;
+    border-radius: $border-radius-1-5;
     background: $blue-100;
     padding: 3px;
 
@@ -18,13 +20,13 @@
       color: $gray-900;
       opacity: 0.7;
       text-align: center;
+      border-radius: $border-radius-1-5;
       cursor: pointer;
-      border-radius: 6px;
 
       &.sel {
+        font-weight: 500;
         color: $gray-700;
         opacity: 1;
-        font-weight: 500;
         background: $white;
         box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.1), 0px 2px 3px rgba(0, 0, 0, 0.07);
       }
@@ -43,8 +45,7 @@
   &::after {
     content: "";
     position: absolute;
-    width: 57px;
-    height: 57px;
+    @include box(57px);
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url(../images/svg/multi-start.svg);

@@ -1,7 +1,6 @@
 .#{$prefix}c-faq-accordian__rating,
 .#{$prefix}c-faq-accordian__invest,
-.#{$prefix}c-faq-accordian__fees,
-.pe-l-footer__accordion {
+.#{$prefix}c-faq-accordian__fees {
   border-bottom: 1px solid #e2e8f0;
 
   &__header--focus &__header__button {
@@ -11,6 +10,10 @@
 
   &__header__button {
     width: 100%;
+    // font-weight: 600;
+    // font-size: 14px;
+    // line-height: 16px;
+    @include font(600, 14px, 1.2, null);
     text-align: left;
     padding: 1rem 12px;
     border-top: 1px solid #e2e8f0;

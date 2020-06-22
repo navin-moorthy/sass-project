@@ -1,20 +1,4 @@
-.#{$prefix}p__lead {
-  // font-size: 15px;
-  // line-height: 20px;
-  @include font(null, 15px, 1.3, null);
-
-  @include sm {
-    // font-size: 16px;
-    // line-height: 24px;
-    @include font(null, 1rem, 1.5, null);
-  }
-
-  @include md {
-    // font-size: 18px;
-    // line-height: 28px;
-    @include font(null, 1.125rem, 1.6, null);
-  }
-}
+// Mostly used paragraphs
 
 .#{$prefix}p__medium {
   // font-size: 14px;
@@ -34,35 +18,43 @@
   @include font(null, 14px, 1.4, null);
 }
 
+// Least used
+
+.#{$prefix}p__lead {
+  // font-size: 15px;
+  // line-height: 20px;
+  @include font(null, 15px, 1.3, null);
+
+  @include sm {
+    // font-size: 16px;
+    // line-height: 24px;
+    @include font(null, 1rem, 1.5, null);
+  }
+
+  @include md {
+    // font-size: 18px;
+    // line-height: 28px;
+    @include font(null, 1.125rem, 1.6, null);
+  }
+}
+
 .#{$prefix}p2 {
   // font-size: 13px;
   // line-height: 15px;
   @include font(null, 13px, 1.2, null);
 }
 
-// Better Solution
-
-.#{$prefix}p__invest-card {
-  @include font(null, 14px, 1.4, null);
-  color: $gray-500;
+.#{$prefix}p3 {
+  // font-weight: 600;;
+  // font-size: 14px;
+  // line-height: 20px;
+  @include font(600, 14px, 1.4, null);
 }
 
-.#{$prefix}p__social-proof {
+.#{$prefix}p4 {
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 20px;
   @include font(500, 14px, 1.4, null);
   color: $white;
-}
-
-.#{$prefix}p__faq {
-  @include font(null, 14px, 1.4, null);
-  color: $gray-600;
-}
-
-.#{$prefix}p__rating-recommendation {
-  @include font(600, 14px, 1.4, null);
-  color: $gray-800;
-}
-
-.#{$prefix}p__rating-button {
-  @include font(500, 14px, 1.4, null);
-  color: $gray-700;
 }

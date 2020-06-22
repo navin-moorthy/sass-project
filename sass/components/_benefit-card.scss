@@ -18,8 +18,20 @@
   }
 
   &__body {
+    .pe-p1 {
+      color: $gray-500;
+    }
+
     @include sm {
       text-align: center;
     }
   }
+}
+
+.#{$prefix}h4__benefit-card {
+  // font-weight: 600;
+  // font-size: 16px;
+  // line-height: 18px;
+  @include font(600, 1rem, null, null);
+  margin-bottom: 0.5rem;
 }

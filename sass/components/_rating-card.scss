@@ -35,7 +35,7 @@
     &-left {
       @extend %card;
       @extend %card-left;
-      border-radius: 6px 0 0 0;
+      border-radius: $border-radius-1-5 0 0 0;
 
       @include sm {
         padding: 1.5rem;
@@ -53,7 +53,7 @@
     &-right {
       @extend %card;
       @extend %card-right;
-      border-radius: 0 6px 0 0;
+      border-radius: 0 $border-radius-1-5 0 0;
 
       &::after {
         height: 2px;
@@ -70,13 +70,13 @@
     &-left {
       @extend %card;
       @extend %card-left;
-      border-radius: 0 0 0 6px;
+      border-radius: 0 0 0 $border-radius-1-5;
     }
 
     &-right {
       @extend %card;
       @extend %card-right;
-      border-radius: 0 0 6px 0;
+      border-radius: 0 0 $border-radius-1-5 0;
     }
   }
 

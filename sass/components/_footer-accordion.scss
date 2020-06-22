@@ -1,9 +1,7 @@
 .#{$prefix}c-footer__accordion1,
 .#{$prefix}c-footer__accordion2 {
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-right: -15px;
-  margin-left: -15px;
+  padding: 0 0.5rem;
+  margin: 0 -15px;
 
   &__header--focus &__header__button {
     outline: none;
@@ -11,10 +9,13 @@
 
   &__header__button {
     width: 100%;
+    // font-weight: 600;
+    // font-size: 13px;
+    // line-height: 14px;
     @include font(600, 14px, 1.14, null);
     text-align: left;
     color: $white;
-    padding: 12px 8px;
+    padding: 0.75rem 0.5rem;
     border-bottom: 1px solid #353b44;
     transition: $handorgel__header__button-transition;
     user-select: none;
@@ -62,11 +63,14 @@
   }
 
   &__content__inner {
-    padding: 12px 8px;
+    padding: 0.75rem 0.5rem;
     opacity: 0;
     transition: $handorgel__content__inner-transition;
 
     li {
+      // font-weight: 500;
+      // font-size: 13px;
+      // line-height: 8px;
       @include font(500, 13px, 0.62, null);
       color: $gray-300;
       margin-bottom: 1rem;

@@ -27,5 +27,14 @@
         margin-bottom: 0;
       }
     }
+
+    .pe-h3 {
+      color: $white;
+      margin-bottom: 8px;
+
+      img {
+        @include box(20px);
+      }
+    }
   }
 }

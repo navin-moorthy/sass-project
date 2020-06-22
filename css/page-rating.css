@@ -28,6 +28,38 @@
   }
 }
 
+.long-term-wealth-card.pe-c-fund-card-static, .long-term-wealth-card.pe-c-journey-card {
+  background: linear-gradient(0deg, #ffffff -106.25%, #eafff2 100%);
+}
+
+.long-term-wealth-card.pe-c-fund-card-static:hover .pe-button-primary, .long-term-wealth-card.pe-c-journey-card:hover .pe-button-primary {
+  background-color: #1c9778;
+}
+
+.short-term-wealth-card.pe-c-fund-card-static, .short-term-wealth-card.pe-c-journey-card {
+  background: linear-gradient(360deg, #f7e4b9 -102.12%, #fef8eb 109.19%);
+}
+
+.short-term-wealth-card.pe-c-fund-card-static:hover .pe-button-primary, .short-term-wealth-card.pe-c-journey-card:hover .pe-button-primary {
+  background-color: #dd6b20;
+}
+
+.save-tax-card.pe-c-fund-card-static, .save-tax-card.pe-c-journey-card {
+  background: linear-gradient(180deg, #eef9ff 10.95%, #cce2ff 246.29%);
+}
+
+.save-tax-card.pe-c-fund-card-static:hover .pe-button-primary, .save-tax-card.pe-c-journey-card:hover .pe-button-primary {
+  background-color: #1971e4;
+}
+
+.emergency-ready-card.pe-c-fund-card-static, .emergency-ready-card.pe-c-journey-card {
+  background: linear-gradient(180deg, #fff5f5 13.75%, #fed7d7 420%);
+}
+
+.emergency-ready-card.pe-c-fund-card-static:hover .pe-button-primary, .emergency-ready-card.pe-c-journey-card:hover .pe-button-primary {
+  background-color: #d53f8c;
+}
+
 .pe-c-menu {
   position: fixed;
   top: 48px;
@@ -284,7 +316,7 @@
   max-width: 300px;
 }
 
-.pe-c-fund-card__info .pe-h5 {
+.pe-c-fund-card__info .pe-h6 {
   color: #181818;
   margin-bottom: 10px;
 }
@@ -321,9 +353,15 @@
 }
 
 .pe-c-fund-options__bottom {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.3;
   color: #737373;
+}
+
+@media (min-width: 376px) {
+  .pe-c-fund-options__bottom {
+    font-size: 13px;
+  }
 }
 
 .pe-c-brands-showcase {
@@ -469,41 +507,31 @@
   }
 }
 
+.pe-c-card-list-item {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.35;
+  color: #181818;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 376px) {
+  .pe-c-card-list-item {
+    font-size: 15px;
+  }
+}
+
+.pe-c-card-list-item figure {
+  width: 16px;
+  height: 16px;
+  margin-right: 0.75rem;
+}
+
 .pe-c-fund-card-static {
   box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-}
-
-.pe-c-fund-card-static.long-term-wealth-card {
-  background: linear-gradient(0deg, #ffffff -106.25%, #eafff2 100%);
-}
-
-.pe-c-fund-card-static.long-term-wealth-card:hover button {
-  background-color: #1c9778;
-}
-
-.pe-c-fund-card-static.short-term-wealth-card {
-  background: linear-gradient(360deg, #f7e4b9 -102.12%, #fef8eb 109.19%);
-}
-
-.pe-c-fund-card-static.short-term-wealth-card:hover button {
-  background-color: #dd6b20;
-}
-
-.pe-c-fund-card-static.save-tax-card {
-  background: linear-gradient(180deg, #eef9ff 10.95%, #cce2ff 246.29%);
-}
-
-.pe-c-fund-card-static.save-tax-card:hover button {
-  background-color: #1971e4;
-}
-
-.pe-c-fund-card-static.emergency-ready-card {
-  background: linear-gradient(180deg, #fff5f5 13.75%, #fed7d7 420%);
-}
-
-.pe-c-fund-card-static.emergency-ready-card:hover button {
-  background-color: #d53f8c;
 }
 
 .pe-c-fund-card-static__wrapper {
@@ -583,6 +611,10 @@
 
 .pe-c-fund-card-static-list {
   margin-bottom: 20px;
+}
+
+.pe-c-fund-card-static .pe-button-primary {
+  width: 100%;
 }
 
 .pe-l-top-funds {
@@ -677,6 +709,10 @@
 
 .pe-c-rating-accordion__header__button {
   width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #404040;
   text-align: left;
   padding: 12px 12px 12px 2.25rem;
   transition: background-color 0.2s ease;
@@ -730,6 +766,10 @@
   transition: none;
 }
 
+.pe-c-rating-accordion__content .pe-p1 {
+  color: #595959;
+}
+
 .pe-c-rating-accordion__content__inner {
   padding: 4px 12px 12px 12px;
   opacity: 0;
@@ -739,94 +779,6 @@
 .pe-c-rating-accordion__content--opened .pe-c-rating-accordion__content__inner {
   opacity: 1;
   transition: opacity 0.3s ease;
-}
-
-.pe-c-rating-tabs {
-  position: relative;
-  overflow: hidden;
-}
-
-@media (min-width: 576px) {
-  .pe-c-rating-tabs {
-    overflow: visible;
-  }
-}
-
-.pe-c-rating-tabs .tabs {
-  display: inline-flex;
-  border-radius: 6px;
-  background: #cbe3f6;
-  padding: 3px;
-}
-
-.pe-c-rating-tabs .tabs .tab {
-  font-size: 14px;
-  line-height: 1.4;
-  padding: 5px 15px;
-  color: #181818;
-  opacity: 0.7;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-.pe-c-rating-tabs .tabs .tab.sel {
-  color: #404040;
-  opacity: 1;
-  font-weight: 500;
-  background: #ffffff;
-  box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.1), 0px 2px 3px rgba(0, 0, 0, 0.07);
-}
-
-.pe-c-rating-tabs__item {
-  padding-top: 1rem;
-}
-
-@media (min-width: 992px) {
-  .pe-c-rating-tabs__item {
-    padding-top: 0rem;
-    padding-bottom: 1rem;
-  }
-}
-
-.pe-c-rating-tabs::after {
-  content: "";
-  position: absolute;
-  width: 57px;
-  height: 57px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../images/svg/multi-start.svg);
-  right: -15px;
-  top: 9px;
-}
-
-@media (min-width: 576px) {
-  .pe-c-rating-tabs::after {
-    right: -15px;
-    top: 9px;
-  }
-}
-
-@media (min-width: 768px) {
-  .pe-c-rating-tabs::after {
-    top: 9px;
-    right: 60px;
-  }
-}
-
-@media (min-width: 992px) {
-  .pe-c-rating-tabs::after {
-    top: -23px;
-    right: -17px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .pe-c-rating-tabs::after {
-    top: -23px;
-    right: 25px;
-  }
 }
 
 .pe-c-rating-card__top-left, .pe-c-rating-card__top-right, .pe-c-rating-card__bottom-left, .pe-c-rating-card__bottom-right {
@@ -927,6 +879,94 @@
   color: #737373;
 }
 
+.pe-c-rating-tabs {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 576px) {
+  .pe-c-rating-tabs {
+    overflow: visible;
+  }
+}
+
+.pe-c-rating-tabs .tabs {
+  display: flex;
+  border-radius: 6px;
+  background: #cbe3f6;
+  padding: 3px;
+}
+
+.pe-c-rating-tabs .tabs .tab {
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 5px 15px;
+  color: #181818;
+  opacity: 0.7;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pe-c-rating-tabs .tabs .tab.sel {
+  font-weight: 500;
+  color: #404040;
+  opacity: 1;
+  background: #ffffff;
+  box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.1), 0px 2px 3px rgba(0, 0, 0, 0.07);
+}
+
+.pe-c-rating-tabs__item {
+  padding-top: 1rem;
+}
+
+@media (min-width: 992px) {
+  .pe-c-rating-tabs__item {
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.pe-c-rating-tabs::after {
+  content: "";
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/svg/multi-start.svg);
+  right: -15px;
+  top: 9px;
+}
+
+@media (min-width: 576px) {
+  .pe-c-rating-tabs::after {
+    right: -15px;
+    top: 9px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pe-c-rating-tabs::after {
+    top: 9px;
+    right: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .pe-c-rating-tabs::after {
+    top: -23px;
+    right: -17px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pe-c-rating-tabs::after {
+    top: -23px;
+    right: 25px;
+  }
+}
+
 .pe-l-rating-method {
   padding: 2rem 0;
   background: #ebf8ff;
@@ -961,30 +1001,44 @@
 }
 
 .pe-l-rating-method__intro {
+  grid-area: intro-section-rating-method;
   text-align: center;
   max-width: 314px;
   margin: 0 auto;
-  grid-area: intro-section-rating-method;
-  margin-bottom: 30px;
-}
-
-.pe-l-rating-method__intro .pe-p__faq {
-  margin-bottom: 8px;
+  margin-bottom: 1.875rem;
 }
 
 @media (min-width: 576px) {
-  .pe-l-rating-method__intro .pe-p__faq {
+  .pe-l-rating-method__intro {
+    max-width: none;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .pe-l-rating-method__intro {
+    text-align: left;
+  }
+}
+
+.pe-l-rating-method__intro .pe-p1 {
+  color: #595959;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 576px) {
+  .pe-l-rating-method__intro .pe-p1 {
     margin-bottom: 12px;
   }
 }
 
 .pe-l-rating-method__intro .pe-h2 {
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 @media (min-width: 576px) {
   .pe-l-rating-method__intro .pe-h2 {
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -998,28 +1052,15 @@
   }
 }
 
-@media (min-width: 576px) {
-  .pe-l-rating-method__intro {
-    max-width: none;
-    margin-bottom: 24px;
-  }
-}
-
-@media (min-width: 992px) {
-  .pe-l-rating-method__intro {
-    text-align: left;
-  }
-}
-
-.pe-l-rating-method .pe-p__rating-recommendation {
+.pe-l-rating-method .pe-p3 {
+  grid-area: accordion-header;
   padding: 1.25rem 0rem;
   margin: 0 auto;
-  grid-area: accordion-header;
+  color: #343434;
 }
 
 .pe-l-rating-method .pe-c-rating-accordion {
   grid-area: accordion;
-  max-width: 100%;
 }
 
 @media (min-width: 992px) {
@@ -1057,10 +1098,20 @@
   }
 }
 
+.pe-c-benefit-card__body .pe-p1 {
+  color: #737373;
+}
+
 @media (min-width: 576px) {
   .pe-c-benefit-card__body {
     text-align: center;
   }
+}
+
+.pe-h4__benefit-card {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .pe-l-why-scripbox {
@@ -1086,7 +1137,7 @@
 }
 
 .pe-l-why-scripbox__header .pe-h2 {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .pe-l-why-scripbox__header .pe-p__medium {
@@ -1100,7 +1151,7 @@
     margin-bottom: 3.5rem;
   }
   .pe-l-why-scripbox__header .pe-h2 {
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
   }
   .pe-l-why-scripbox__header .pe-p__medium {
     margin-bottom: 1.5rem;
@@ -1141,47 +1192,46 @@
   }
 }
 
+.pe-l-social-proof__info .pe-h3 {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.pe-l-social-proof__info .pe-h3 img {
+  width: 20px;
+  height: 20px;
+}
+
 .pe-c-faq-accordian__rating,
 .pe-c-faq-accordian__invest,
-.pe-c-faq-accordian__fees,
-.pe-l-footer__accordion {
+.pe-c-faq-accordian__fees {
   border-bottom: 1px solid #e2e8f0;
 }
 
 .pe-c-faq-accordian__rating__header--focus .pe-c-faq-accordian__rating__header__button,
 .pe-c-faq-accordian__invest__header--focus .pe-c-faq-accordian__rating__header__button,
-.pe-c-faq-accordian__fees__header--focus .pe-c-faq-accordian__rating__header__button,
-.pe-l-footer__accordion__header--focus .pe-c-faq-accordian__rating__header__button, .pe-c-faq-accordian__rating__header--focus
+.pe-c-faq-accordian__fees__header--focus .pe-c-faq-accordian__rating__header__button, .pe-c-faq-accordian__rating__header--focus
 .pe-c-faq-accordian__invest__header__button,
 .pe-c-faq-accordian__invest__header--focus
 .pe-c-faq-accordian__invest__header__button,
 .pe-c-faq-accordian__fees__header--focus
-.pe-c-faq-accordian__invest__header__button,
-.pe-l-footer__accordion__header--focus
 .pe-c-faq-accordian__invest__header__button, .pe-c-faq-accordian__rating__header--focus
 .pe-c-faq-accordian__fees__header__button,
 .pe-c-faq-accordian__invest__header--focus
 .pe-c-faq-accordian__fees__header__button,
 .pe-c-faq-accordian__fees__header--focus
-.pe-c-faq-accordian__fees__header__button,
-.pe-l-footer__accordion__header--focus
-.pe-c-faq-accordian__fees__header__button, .pe-c-faq-accordian__rating__header--focus
-.pe-l-footer__accordion__header__button,
-.pe-c-faq-accordian__invest__header--focus
-.pe-l-footer__accordion__header__button,
-.pe-c-faq-accordian__fees__header--focus
-.pe-l-footer__accordion__header__button,
-.pe-l-footer__accordion__header--focus
-.pe-l-footer__accordion__header__button {
+.pe-c-faq-accordian__fees__header__button {
   outline: none;
   background: #f2f2f2;
 }
 
 .pe-c-faq-accordian__rating__header__button,
 .pe-c-faq-accordian__invest__header__button,
-.pe-c-faq-accordian__fees__header__button,
-.pe-l-footer__accordion__header__button {
+.pe-c-faq-accordian__fees__header__button {
   width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
   text-align: left;
   padding: 1rem 12px;
   border-top: 1px solid #e2e8f0;
@@ -1192,8 +1242,7 @@
 
 .pe-c-faq-accordian__rating__header__button:after,
 .pe-c-faq-accordian__invest__header__button:after,
-.pe-c-faq-accordian__fees__header__button:after,
-.pe-l-footer__accordion__header__button:after {
+.pe-c-faq-accordian__fees__header__button:after {
   content: "";
   position: absolute;
   width: 16px;
@@ -1207,36 +1256,23 @@
 
 .pe-c-faq-accordian__rating__header--open .pe-c-faq-accordian__rating__header__button:after,
 .pe-c-faq-accordian__invest__header--open .pe-c-faq-accordian__rating__header__button:after,
-.pe-c-faq-accordian__fees__header--open .pe-c-faq-accordian__rating__header__button:after,
-.pe-l-footer__accordion__header--open .pe-c-faq-accordian__rating__header__button:after, .pe-c-faq-accordian__rating__header--open
+.pe-c-faq-accordian__fees__header--open .pe-c-faq-accordian__rating__header__button:after, .pe-c-faq-accordian__rating__header--open
 .pe-c-faq-accordian__invest__header__button:after,
 .pe-c-faq-accordian__invest__header--open
 .pe-c-faq-accordian__invest__header__button:after,
 .pe-c-faq-accordian__fees__header--open
-.pe-c-faq-accordian__invest__header__button:after,
-.pe-l-footer__accordion__header--open
 .pe-c-faq-accordian__invest__header__button:after, .pe-c-faq-accordian__rating__header--open
 .pe-c-faq-accordian__fees__header__button:after,
 .pe-c-faq-accordian__invest__header--open
 .pe-c-faq-accordian__fees__header__button:after,
 .pe-c-faq-accordian__fees__header--open
-.pe-c-faq-accordian__fees__header__button:after,
-.pe-l-footer__accordion__header--open
-.pe-c-faq-accordian__fees__header__button:after, .pe-c-faq-accordian__rating__header--open
-.pe-l-footer__accordion__header__button:after,
-.pe-c-faq-accordian__invest__header--open
-.pe-l-footer__accordion__header__button:after,
-.pe-c-faq-accordian__fees__header--open
-.pe-l-footer__accordion__header__button:after,
-.pe-l-footer__accordion__header--open
-.pe-l-footer__accordion__header__button:after {
+.pe-c-faq-accordian__fees__header__button:after {
   background-image: url(../../images/svg/cheveron-up.svg);
 }
 
 .pe-c-faq-accordian__rating__content,
 .pe-c-faq-accordian__invest__content,
-.pe-c-faq-accordian__fees__content,
-.pe-l-footer__accordion__content {
+.pe-c-faq-accordian__fees__content {
   display: none;
   overflow: hidden;
   height: 0;
@@ -1245,30 +1281,26 @@
 
 .pe-c-faq-accordian__rating__content--open,
 .pe-c-faq-accordian__invest__content--open,
-.pe-c-faq-accordian__fees__content--open,
-.pe-l-footer__accordion__content--open {
+.pe-c-faq-accordian__fees__content--open {
   display: block;
   transition: height 0.2s ease;
 }
 
 .pe-c-faq-accordian__rating__content--opened,
 .pe-c-faq-accordian__invest__content--opened,
-.pe-c-faq-accordian__fees__content--opened,
-.pe-l-footer__accordion__content--opened {
+.pe-c-faq-accordian__fees__content--opened {
   overflow: visible;
 }
 
 .pe-c-faq-accordian__rating__content--notransition,
 .pe-c-faq-accordian__invest__content--notransition,
-.pe-c-faq-accordian__fees__content--notransition,
-.pe-l-footer__accordion__content--notransition {
+.pe-c-faq-accordian__fees__content--notransition {
   transition: none;
 }
 
 .pe-c-faq-accordian__rating__content__inner,
 .pe-c-faq-accordian__invest__content__inner,
-.pe-c-faq-accordian__fees__content__inner,
-.pe-l-footer__accordion__content__inner {
+.pe-c-faq-accordian__fees__content__inner {
   padding: 0px 12px 1rem 12px;
   opacity: 0;
   transition: opacity 0.1s ease;
@@ -1276,29 +1308,17 @@
 
 .pe-c-faq-accordian__rating__content--opened .pe-c-faq-accordian__rating__content__inner,
 .pe-c-faq-accordian__invest__content--opened .pe-c-faq-accordian__rating__content__inner,
-.pe-c-faq-accordian__fees__content--opened .pe-c-faq-accordian__rating__content__inner,
-.pe-l-footer__accordion__content--opened .pe-c-faq-accordian__rating__content__inner, .pe-c-faq-accordian__rating__content--opened
+.pe-c-faq-accordian__fees__content--opened .pe-c-faq-accordian__rating__content__inner, .pe-c-faq-accordian__rating__content--opened
 .pe-c-faq-accordian__invest__content__inner,
 .pe-c-faq-accordian__invest__content--opened
 .pe-c-faq-accordian__invest__content__inner,
 .pe-c-faq-accordian__fees__content--opened
-.pe-c-faq-accordian__invest__content__inner,
-.pe-l-footer__accordion__content--opened
 .pe-c-faq-accordian__invest__content__inner, .pe-c-faq-accordian__rating__content--opened
 .pe-c-faq-accordian__fees__content__inner,
 .pe-c-faq-accordian__invest__content--opened
 .pe-c-faq-accordian__fees__content__inner,
 .pe-c-faq-accordian__fees__content--opened
-.pe-c-faq-accordian__fees__content__inner,
-.pe-l-footer__accordion__content--opened
-.pe-c-faq-accordian__fees__content__inner, .pe-c-faq-accordian__rating__content--opened
-.pe-l-footer__accordion__content__inner,
-.pe-c-faq-accordian__invest__content--opened
-.pe-l-footer__accordion__content__inner,
-.pe-c-faq-accordian__fees__content--opened
-.pe-l-footer__accordion__content__inner,
-.pe-l-footer__accordion__content--opened
-.pe-l-footer__accordion__content__inner {
+.pe-c-faq-accordian__fees__content__inner {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
@@ -1329,63 +1349,38 @@
 }
 
 .pe-c-journey-card {
-  padding: 1.5rem 1.5rem 2rem 1.5rem;
   position: relative;
-  border-radius: 12px;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  border-radius: 0.75rem;
   box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 576px) {
   .pe-c-journey-card {
-    padding: 24px 18px 32px 24px;
+    padding: 1.5rem 1rem 2rem 1.5rem;
   }
 }
 
-.pe-c-journey-card.long-term-wealth-card {
-  background: linear-gradient(180deg, #dbfff0 0%, #d1fce2 100%);
-}
-
-.pe-c-journey-card.long-term-wealth-card:hover .pe-button-primary {
-  background-color: #1c9778;
-}
-
-.pe-c-journey-card.short-term-wealth-card {
-  background: linear-gradient(360deg, #f7e4b9 -102.12%, #fef8eb 109.19%);
-}
-
-.pe-c-journey-card.short-term-wealth-card:hover .pe-button-primary {
-  background-color: #dd6b20;
-}
-
-.pe-c-journey-card.save-tax-card {
-  background: linear-gradient(180deg, #eef9ff 10.95%, #cce2ff 246.29%);
-}
-
-.pe-c-journey-card.save-tax-card:hover .pe-button-primary {
-  background-color: #1971e4;
-}
-
-.pe-c-journey-card.emergency-ready-card {
-  background: linear-gradient(180deg, #fff5f5 10.95%, #fed7d7 246.29%);
-}
-
-.pe-c-journey-card.emergency-ready-card:hover .pe-button-primary {
-  background-color: #d53f8c;
-}
-
 .pe-c-journey-card__info {
-  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
 }
 
 @media (min-width: 576px) {
   .pe-c-journey-card__info {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 }
 
-.pe-c-journey-card__info .pe-h6 {
+.pe-c-journey-card__info .pe-h5 {
+  font-size: 1rem;
   color: #181818;
   margin-bottom: 0.5rem;
+}
+
+@media (min-width: 376px) {
+  .pe-c-journey-card__info .pe-h5 {
+    font-size: 1.125rem;
+  }
 }
 
 .pe-c-journey-card__info .pe-p1 {
@@ -1475,23 +1470,7 @@
 }
 
 .pe-c-journey-card__list {
-  margin-bottom: 28px;
-}
-
-.pe-c-card-list-item {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 1.35;
-  margin-bottom: 8px;
-  color: #181818;
-}
-
-.pe-c-card-list-item figure {
-  width: 16px;
-  height: 16px;
-  margin-right: 12px;
+  margin-bottom: 1.75rem;
 }
 
 .pe-l-journey {
@@ -1515,10 +1494,8 @@
 
 .pe-c-footer__accordion1,
 .pe-c-footer__accordion2 {
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-right: -15px;
-  margin-left: -15px;
+  padding: 0 0.5rem;
+  margin: 0 -15px;
 }
 
 .pe-c-footer__accordion1__header--focus .pe-c-footer__accordion1__header__button,
@@ -1537,7 +1514,7 @@
   line-height: 1.14;
   text-align: left;
   color: #ffffff;
-  padding: 12px 8px;
+  padding: 0.75rem 0.5rem;
   border-bottom: 1px solid #353b44;
   transition: background-color 0.2s ease;
   user-select: none;
@@ -1600,7 +1577,7 @@
 
 .pe-c-footer__accordion1__content__inner,
 .pe-c-footer__accordion2__content__inner {
-  padding: 12px 8px;
+  padding: 0.75rem 0.5rem;
   opacity: 0;
   transition: opacity 0.1s ease;
 }
@@ -1625,8 +1602,7 @@
 
 .pe-l-footer {
   background: #1b2330;
-  padding-top: 16px;
-  padding-bottom: 3.25rem;
+  padding: 1rem 0 3.25rem 0;
 }
 
 @media (min-width: 576px) {
@@ -1636,13 +1612,12 @@
 }
 
 .pe-l-footer__mobile-logo {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .pe-l-footer__accordion {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 0 0.5rem;
 }
 
 .pe-l-footer__mobile-download {
@@ -1654,32 +1629,29 @@
   font-size: 14px;
   line-height: 1.14;
   color: #ffffff;
-  padding: 12px 0;
+  padding: 0.75rem 0;
 }
 
 .pe-l-footer__mobile-download ul {
-  margin-top: 4px;
-  margin-bottom: 20px;
+  margin: 4px 0 1.25rem 0;
 }
 
 .pe-l-footer__mobile-download a {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  padding: 10px 0;
-  color: #ffffff;
-  text-align: center;
-  background: #394455;
-  border-radius: 6px;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 500;
+  font-size: 14px;
   line-height: 1.45;
+  padding: 10px 0;
+  color: #ffffff;
+  background: #394455;
+  border-radius: 6px;
+  position: relative;
 }
 
 .pe-l-footer__mobile-download a svg {
-  margin-right: 12px;
+  margin-right: 0.75rem;
 }
 
 .pe-l-footer__info {
@@ -1705,18 +1677,17 @@
 }
 
 .pe-l-footer__bottom {
-  padding-top: 42px;
-  padding-bottom: 40px;
+  padding: 2.625rem 0 2.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .pe-c-footer-list figure {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   justify-content: flex-start;
 }
 
 .pe-c-footer-list svg {
-  margin-right: 12px;
+  margin-right: 0.65rem;
 }
 
 .pe-c-footer-list p {
@@ -1726,7 +1697,7 @@
   line-height: 1.1;
   color: #ffffff;
   opacity: 0.5;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .pe-c-footer-list li {
