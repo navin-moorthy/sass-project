@@ -110,7 +110,7 @@
 
 .pe-c-menu--open .pe-c-menu {
   transform: translateY(0px);
-  transition: transform 0.6s;
+  transition: transform 0.4s;
 }
 
 .pe-c-menu--open .pe-c-menu__overlay {
