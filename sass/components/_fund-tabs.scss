@@ -4,18 +4,19 @@
 
   @include md {
     max-width: 730px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
+
+  @extend %primary-tab;
 
   @include sm {
     &__item {
       position: relative;
       transition: all 150ms ease;
       margin-top: 5px;
+      cursor: pointer;
 
       &:before {
-        opacity: 0;
         content: "";
         position: absolute;
         top: -1px;
@@ -23,11 +24,11 @@
         height: calc(100% - 3px);
         width: calc(100% + 18px);
         border: 1px solid #d9d9d9;
-        border-radius: 8px;
+        border-radius: $border-radius-2;
         box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        transition: all 200ms ease;
+        @include transition;
         z-index: -1;
+        opacity: 0;
       }
 
       &:hover {
@@ -37,6 +38,4 @@
       }
     }
   }
-
-  @extend %primary-tab;
 }

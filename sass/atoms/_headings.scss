@@ -21,6 +21,33 @@
   }
 }
 
+.#{$prefix}h2 {
+  // font-weight: bold;
+  // font-size: 20px;
+  // line-height: 22px;
+  @include font(700, 1.25rem, 1.1, null);
+
+  @include sm {
+    // font-size: 28px;
+    // line-height: 32px;
+    // letter-spacing: -0.01em;
+    @include font(null, 1.75rem, 1.15, 0.01em);
+  }
+}
+
+.#{$prefix}h4 {
+  // font-weight: 600;
+  // font-size: 14px;
+  // line-height: 16px;
+  @include font(600, 14px, 1.2, null);
+
+  @include md {
+    // font-size: 16px;
+    // line-height: 18px;
+    @include font(null, 1rem, null, null);
+  }
+}
+
 .#{$prefix}h5 {
   // font-weight: 600;
   // font-size: 14px;
@@ -28,40 +55,16 @@
   @include font(600, 14px, 1.2, null);
 }
 
-.#{$prefix}h2 {
-  @include font(700, 1.25rem, 1.1, null);
-  color: $gray-900;
-
-  @include sm {
-    @include font(null, 1.75rem, 1.15, 0.01em);
-  }
-}
-
-.#{$prefix}h4 {
-  @include font(600, 14px, 1.2, null);
-  color: $gray-900;
-  margin-bottom: 10px;
-
-  @include md {
-    @include font(null, 1rem, null, null);
-    margin-bottom: 12px;
-  }
+.#{$prefix}h6 {
+  // font-weight: bold;
+  // font-size: 18px;
+  // line-height: 20px;
+  @include font(700, 1.125rem, 1.1, null);
 }
 
 .#{$prefix}h4__md {
   @include font(600, 1rem, null, null);
   margin-bottom: 0.5rem;
-}
-
-.#{$prefix}h4__static {
-  @include font(600, 18px, 1.1, null);
-  color: $gray-900;
-  margin-bottom: 8px;
-
-  @include md {
-    @include font(600, 1rem, null, null);
-    margin-bottom: 4px;
-  }
 }
 
 // Better Solution
@@ -82,9 +85,4 @@
   img {
     @include box(20px);
   }
-}
-
-.#{$prefix}h6 {
-  @include font(700, 1.125rem, 1.1, null);
-  color: $gray-900;
 }

@@ -4,8 +4,11 @@
 
     .tab {
       flex: 1;
-      @include font(600, 14px, 1.15, null);
       padding: 10px 0;
+      // font-weight: 600;
+      // font-size: 16px;
+      // line-height: 18px;
+      @include font(600, 14px, 1.15, null);
       color: $gray-500;
       text-align: center;
       cursor: pointer;
@@ -18,7 +21,7 @@
 
       @include lg {
         @include font(600, 1rem, 1.12, null);
-        padding: 15px 0;
+        padding: 1rem 0;
       }
     }
   }

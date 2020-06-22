@@ -16,6 +16,18 @@
   }
 }
 
+.#{$prefix}p__medium {
+  // font-size: 14px;
+  // line-height: 20px;
+  @include font(null, 14px, 1.5, null);
+
+  @include sm {
+    // font-size: 16px;
+    // line-height: 26px;
+    @include font(null, 1rem, 1.6, null);
+  }
+}
+
 .#{$prefix}p1 {
   // font-size: 14px;
   // line-height: 20px;
@@ -23,25 +35,9 @@
 }
 
 .#{$prefix}p2 {
+  // font-size: 13px;
+  // line-height: 15px;
   @include font(null, 13px, 1.2, null);
-}
-
-.#{$prefix}p__medium {
-  @include font(null, 14px, 1.5, null);
-  color: $gray-500;
-
-  @include sm {
-    @include font(null, 1rem, 1.6, null);
-  }
-}
-
-.#{$prefix}p__sm {
-  @include font(null, 14px, 1.4, null);
-  color: $gray-700;
-
-  @include md {
-    @include font(null, 13px, null, null);
-  }
 }
 
 // Better Solution

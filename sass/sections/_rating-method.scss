@@ -58,6 +58,8 @@
     }
 
     .pe-p__medium {
+      color: $gray-500;
+
       @include lg {
         max-width: 350px;
       }

@@ -1,14 +1,18 @@
 .#{$prefix}c-fund-card-static {
-  background: linear-gradient(0deg, #ffffff -106.25%, #eafff2 100%);
   box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 
-  &:hover {
-    button {
-      background-color: $green-600;
+  &.long-term-wealth-card {
+    background: linear-gradient(0deg, #ffffff -106.25%, #eafff2 100%);
+
+    &:hover {
+      button {
+        background-color: $green-600;
+      }
     }
   }
 
-  &.short-term {
+  &.short-term-wealth-card {
     background: linear-gradient(360deg, #f7e4b9 -102.12%, #fef8eb 109.19%);
 
     &:hover {
@@ -18,7 +22,7 @@
     }
   }
 
-  &.save-taxes {
+  &.save-tax-card {
     background: linear-gradient(180deg, #eef9ff 10.95%, #cce2ff 246.29%);
 
     &:hover {
@@ -28,7 +32,7 @@
     }
   }
 
-  &.emergency {
+  &.emergency-ready-card {
     background: linear-gradient(180deg, #fff5f5 13.75%, #fed7d7 420%);
 
     &:hover {
@@ -41,13 +45,12 @@
   &__wrapper {
     padding: 32px 24px 24px 24px;
     box-shadow: 0px 1px 0px #e2e8f0;
-    cursor: pointer;
 
     @include sm {
-      padding: 12px 1.25rem 12px 1.25rem;
+      padding: 12px 1.25rem;
     }
 
-    .long-term & {
+    .long-term-wealth-card & {
       background-image: url(../images/svg/yellow-circle.svg);
       background-position: bottom -195px right -210px;
       background-repeat: no-repeat;
@@ -65,6 +68,36 @@
     @include sm {
       max-width: 387px;
     }
+
+    .#{$prefix}h4__static {
+      // font-weight: bold;
+      // font-size: 18px;
+      // line-height: 20px;
+      @include font(700, 18px, 1.1, null);
+      color: $gray-900;
+      margin-bottom: 8px;
+
+      @include md {
+        // font-weight: 600;
+        // font-size: 16px;
+        // line-height: 18px;
+        @include font(600, 1rem, null, null);
+        margin-bottom: 4px;
+      }
+    }
+
+    .#{$prefix}p__static {
+      // font-size: 14px;
+      // line-height: 20px;
+      @include font(null, 14px, 1.4, null);
+      color: $gray-700;
+
+      @include md {
+        // font-size: 13px;
+        // line-height: 18px;
+        @include font(null, 13px, null, null);
+      }
+    }
   }
 
   &__image {
@@ -78,18 +111,5 @@
 
   &-list {
     margin-bottom: 20px;
-
-    &__item {
-      display: flex;
-      align-items: center;
-      @include font(500, 15px, 1.35, null);
-      margin-bottom: 8px;
-      color: $gray-900;
-    }
-
-    &__image {
-      @include box(16px, 16px);
-      margin-right: 8px;
-    }
   }
 }

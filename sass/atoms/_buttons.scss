@@ -1,55 +1,6 @@
-.#{$prefix}btn-primary {
-  @include font(600, 16px, 1.2, null);
-  color: $white;
-  background: $green-500;
-  padding: 13px 0;
-  width: 100%;
-  border-radius: 6px;
-  transition: $transition-base;
-
-  .short-term & {
-    background-color: $orange-400;
-  }
-
-  .save-taxes & {
-    background-color: $blue-500;
-  }
-
-  .emergency & {
-    background-color: $pink-400;
-  }
-
-  @include sm {
-    @include font(600, 14px, 1.15, null);
-    padding: 8px 12px;
-  }
-
-  @include pseudo {
-    outline: none;
-  }
-}
-
-.#{$prefix}btn-secondary {
-  display: flex;
-  align-items: center;
-  @include font(600, 14px, 1.15, null);
-  color: $blue-600;
-  background: $white;
-  border-radius: 6px;
-  padding: 8px 12px;
-
-  svg {
-    margin-left: 12px;
-  }
-
-  &:hover {
-    background-color: $gray-100;
-  }
-}
-
 .#{$prefix}button-primary {
   @include font(600, 14px, 1.4, null);
-  color: $white !important;
+  color: $white;
   background: transparent;
   padding: 8px 12px;
   border-radius: 6px;
@@ -74,5 +25,23 @@
 
   @include pseudo {
     outline: none;
+  }
+}
+
+.#{$prefix}btn-secondary {
+  display: flex;
+  align-items: center;
+  @include font(600, 14px, 1.15, null);
+  color: $blue-600;
+  background: $white;
+  border-radius: 6px;
+  padding: 8px 12px;
+
+  svg {
+    margin-left: 12px;
+  }
+
+  &:hover {
+    background-color: $gray-100;
   }
 }

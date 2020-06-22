@@ -10,7 +10,10 @@
 
 .#{$prefix}a__nav {
   @include flex(null, center);
-  @include font(600, 0.875rem, 1, null);
+  // font-weight: 600;
+  // font-size: 14px;
+  // line-height: 16px;
+  @include font(600, 0.875rem, 1.14, null);
   padding: 0.5rem 0.75rem;
   border-radius: $border-radius-2;
   transition: $transition-base;
