@@ -8,13 +8,14 @@ body {
   font-size: $font-size-base;
   font-weight: $font-weight-base;
   line-height: $line-height-base;
+  position: relative;
 }
 
 figure {
   @include flex(null, center, center);
 }
 
-.#{$prefix}-overflow-ellipsis {
+.#{$prefix}overflow-ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

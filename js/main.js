@@ -3,12 +3,15 @@
 
 document.addEventListener("DOMContentLoaded", function (e) {
   const hamburgerMenuIcon = document.querySelector(".pe-c-menu__hamburger");
+  const menuOverlay = document.querySelector(".pe-c-menu__overlay");
 
-  function openMenu() {
-    this.classList.toggle("pe-c-menu__hamburger--open");
+  function toggleMenu() {
+    hamburgerMenuIcon.classList.toggle("pe-c-menu__hamburger--open");
+    document.body.classList.toggle("pe-c-menu--open");
   }
 
-  hamburgerMenuIcon.addEventListener("click", openMenu, false);
+  hamburgerMenuIcon.addEventListener("click", toggleMenu, false);
+  menuOverlay.addEventListener("click", toggleMenu, false);
 });
 
 var glideInstance = null;

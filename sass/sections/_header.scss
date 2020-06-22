@@ -2,6 +2,8 @@
 
 .#{$prefix}l-header {
   background: $orange-400;
+  position: relative;
+  z-index: $z-index-header;
 
   &__logo {
     @include box(90px, 25px);

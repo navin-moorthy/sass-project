@@ -9,7 +9,7 @@
 // Nav Link
 
 .#{$prefix}a__nav {
-  @include flex(null, center);
+  @include flex(null, center, center);
   // font-weight: 600;
   // font-size: 14px;
   // line-height: 16px;
