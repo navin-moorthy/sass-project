@@ -14,7 +14,7 @@ figure {
   @include flex(null, center, center);
 }
 
-.pe-overflow-ellipsis {
+.#{$prefix}-overflow-ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

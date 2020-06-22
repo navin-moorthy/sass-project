@@ -1,34 +1,14 @@
+// Import all the utils at top
+
 @import "../utils/variables";
 @import "../utils/mixins";
 @import "../utils/placeholders";
 @import "../utils/common";
 
-// Load all the atoms here
+// Import all the atoms
+
 @import "../atoms/headings";
 @import "../atoms/paragraphs";
 @import "../atoms/inputs";
 @import "../atoms/links";
 @import "../atoms/buttons";
-
-// Load all the components here
-
-@import "../components/brand";
-@import "../components/nav";
-@import "../components/menu";
-@import "../components/breadcrumb";
-@import "../components/recommended-border";
-@import "../components/badge";
-@import "../components/fund-card";
-@import "../components/autocomplete";
-@import "../components/brands-showcase";
-@import "../components/fund-tabs";
-@import "../components/fund-card-static";
-@import "../components/benefit-card";
-@import "../components/faq-tabs";
-@import "../components/faq-accordian";
-@import "../components/rating-accordion";
-@import "../components/rating-tabs";
-@import "../components/rating-card";
-@import "../components/journey-card";
-@import "../components/card-list-item";
-@import "../components/footer-accordion";

@@ -1,3 +1,5 @@
+@import "../components/footer-accordion";
+
 .#{$prefix}l-footer {
   background: $footer-bg;
   padding-top: 16px;
@@ -43,6 +45,10 @@
       justify-content: center;
       align-items: center;
       line-height: 1.45;
+
+      svg {
+        margin-right: 12px;
+      }
     }
   }
 

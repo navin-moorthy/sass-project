@@ -1,8 +1,10 @@
+// Import all the utils at top
+
 @import "../utils/variables";
 @import "../utils/mixins";
 @import "../utils/placeholders";
 
-// Load all the sections here
+// Load all the page sections here
 
 @import "../sections/header";
 @import "../sections/hero";
@@ -14,6 +16,7 @@
 @import "../sections/journey";
 @import "../sections/footer";
 
-// Always load the glide carousal at last for it to work
+// Better load the Glide carousal at last for it to work
+
 @import "../vendor/glide.scss";
 @import "../vendor/glideTheme.scss";

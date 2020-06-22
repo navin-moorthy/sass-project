@@ -1,3 +1,7 @@
+@import "../components/rating-accordion";
+@import "../components/rating-tabs";
+@import "../components/rating-card";
+
 .#{$prefix}l-rating-method {
   padding: 2rem 0;
   background: $blue-50;
